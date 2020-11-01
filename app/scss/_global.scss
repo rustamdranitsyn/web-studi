@@ -28,8 +28,35 @@ li {
     margin: 0 auto;
 }
 .subtitle {
+    text-align: center;
     font-weight: bold;
     font-size: 40px;
     line-height: 47px;
     color: #171717;
+}
+.no-marker li {
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    margin-bottom: 25px;
+    line-height: 18px;
+    margin-left: 0;
+    text-align: left;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+.description-name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    color: #000000;
+}
+.popup-order {
+    padding: 16px 50px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #202020;
+    border-radius: 50px;
 }
