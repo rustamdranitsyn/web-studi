@@ -51,12 +51,22 @@ li {
     line-height: 21px;
     color: #000000;
 }
-.popup-order {
+.btn-black {
     padding: 16px 50px;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
     background: #202020;
+    border-radius: 50px;
+}
+.btn-gold {
+    padding: 16px 50px;
+    color: #202020;
+    background: $gold;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #202020;
     border-radius: 50px;
 }
