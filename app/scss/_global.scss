@@ -23,8 +23,14 @@ li {
     margin: 0;
     padding: 0;
 }
+button {
+    outline: none;
+}
+button:hover {
+    cursor: pointer;
+}
 .container  {
-    max-width: 1190px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 .subtitle {
@@ -69,4 +75,25 @@ li {
     line-height: 21px;
     color: #202020;
     border-radius: 50px;
+}
+.works-list-open {
+    position: relative;
+    ul {
+        padding-top: 15px;
+        padding-left: 25px;
+        li {
+            background-image: url(../img/marker-gold.svg);
+            font-size: 15px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+    .works-list-open-bg {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: rgba(226, 226, 226, 0.3);
+        opacity: 0.5;
+    }
+    
 }
