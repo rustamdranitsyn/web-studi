@@ -14,17 +14,33 @@
     .top-rocket {
         display: none;
     }
+    .with-us-roket {
+        display: none;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
     .container {
         max-width: 708px;
-    } 
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .top-bar {
+        display: none;
+    }
+    // .header-wrapper {
+    //     display: none;
+    // }
+    .mob-header {
+        display: block;
+    }
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
     .container{
         max-width: 100%;
+        margin: 0 15px;
     }
 }
 
