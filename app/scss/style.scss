@@ -9,7 +9,6 @@ body .lock {
 
 header {
     position: relative;
-    z-index: 999;
 }
 
 .top-bar {
@@ -133,6 +132,12 @@ header {
 }
 
 /* Начало мобильного меню */
+.hamburger-menu {
+    margin-right: 30px;
+}
+.menu__btn {
+    padding-bottom: 20px;
+}
 .mob-menu__wrapper {
     height: 40px;
     display: flex;
@@ -238,14 +243,15 @@ header {
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
 
-.mob-nav-contact__nav {
+.mob-nav-contact__nav__wrapper {
     position: relative;
     height: 100%;
+    margin-top: 15px;
     padding-top: 10px;
     .mob-nav-contact__nav-item {
         position: relative;
         color: #fff;
-        z-index: 999;
+        z-index: 30;
         text-align: left;
         padding-left: 20px;
         padding-top: 10px;
@@ -253,9 +259,38 @@ header {
             color: #fff;
         }
     }
+    .menu__box__contact {
+        margin: 0 auto;
+        text-align: left;
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+        z-index: 20;
+        position: relative;
+        .menu__box-phone {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 22px;
+            line-height: 15px;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+        .menu__box__info {
+            font-style: normal;
+            font-weight: normal;
+            margin-top: 10px;
+            line-height: 11px;
+            color: #FFFFFF;
+            font-size: 13px;
+        }
+        .top-bar__social {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
 }
 
-.mob-nav-contact__nav:after {
+.mob-nav-contact__nav__wrapper:after {
     content: '';
     position: absolute;
     left: 50%;
@@ -268,13 +303,25 @@ header {
     background: #171717;
 }
 
+.mob-top-bar__call-back {
+    position: relative;
+    z-index: 999;
+    border: 1px solid #FDD45E;
+    border-radius: 50px;
+    margin: 0 20px;
+    margin-top: 15px;
+    a {
+        color: #fff;
+        padding: 10px 0;
+    }
+}
 /* элементы меню */
 .menu__item {
     padding-top: 10px;
     padding-bottom: 2px;
     display: block;
-    font-size: 18px;
-    line-height: 13px;
+    font-size: 23px;
+    line-height: 23px;
     color: #202020;
     text-decoration: none;
     text-align: left;
@@ -348,10 +395,10 @@ header {
 }
 
 .top-description-wrapper {
-    margin-top: 150px;
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
-    width: 650px;
+    max-width: 650px;
 
     h1 {
         font-weight: bold;
@@ -364,7 +411,6 @@ header {
         margin-top: 11px;
         font-weight: normal;
         font-size: 18px;
-        line-height: 21px;
         color: #202020;
     }
 
@@ -379,7 +425,7 @@ header {
 }
 
 .price-promotion__wrapper {
-    z-index: 999;
+    z-index: 500;
     position: relative;
     margin: 0 auto;
     max-width: 1086px;
@@ -478,6 +524,7 @@ header {
     .description-seo__list {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         .description-seo__list-item__title {
             margin-top: 22px;
@@ -485,11 +532,22 @@ header {
 
         .description-seo__list-item {
             max-width: 360px;
+            position: relative;
+            .description-seo__list-item__wrapper {
+                padding: 20px;
+            }
+            .description-seo__list-item-bg {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.3);
+                opacity: 0.5;
+                border: 1px solid #FFFFFF;
+            }
 
             .description-seo__list-item__description {
                 margin-top: 18px;
-                font-size: 15px;
-                line-height: 18px;
                 color: #000000;
             }
 
@@ -508,7 +566,6 @@ header {
         margin-top: 100px;
         font-weight: bold;
         font-size: 20px;
-        line-height: 23px;
         color: #000000;
     }
 
@@ -569,7 +626,7 @@ header {
         margin-top: 95px;
         display: flex;
         justify-content: space-between;
-
+        flex-wrap: wrap;
         .important-seo__list-item {
             width: 380px;
 
@@ -648,7 +705,6 @@ header {
             display: block;
             font-weight: normal;
             font-size: 15px;
-            line-height: 18px;
             color: #000000;
         }
     }
@@ -748,15 +804,13 @@ header {
         .seo-nuances__item-description {
             margin-top: 15px;
             font-weight: normal;
-            font-size: 15px;
-            line-height: 18px;
             color: #202020;
         }
     }
 }
 
 .popup {
-    z-index: 999;
+    z-index: 10000;
     position: fixed;
     width: 100%;
     height: 100%;
