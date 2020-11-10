@@ -809,6 +809,31 @@ header {
     }
 }
 
+// Разработка
+
+.adv-developer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .adv-developer__item {
+        margin-top: 70px;
+        max-width: 300px;
+        .adv-developer__item-title {
+            margin-top: 12px;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            color: #000000;
+        }
+        .adv-developer__item-description {
+            margin-top: 10px;
+            font-size: 15px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+}
+
 .popup {
     z-index: 10000;
     position: fixed;
