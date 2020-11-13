@@ -813,6 +813,7 @@ header {
 .developer-price {
     .developer-price__wrapper {
         display: flex;
+        justify-content: space-between;
         .developer-price__item {
             max-width: 300px;
             border: 3px solid rgba(244, 185, 47, 0.5);
@@ -850,11 +851,25 @@ header {
                     letter-spacing: 0.05em;
                     color: #202020;
                 }
+                .btn-developer {
+                    margin-top: 65px;
+                    background: #F4B92F;
+                    border-radius: 50px;
+                    font-size: 18px;
+                    color: #202020;
+                    padding: 10px 65px;
+                }
             }      
         }
     }
+    .developer-price__order {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
 }
 .stages-development {
+    margin-top: 50px;
     padding: 50px 0;
     background: linear-gradient(100.14deg, #F4B92F 49.22%, #FDD45E 98.19%);
     .tages-development__subtitle {
