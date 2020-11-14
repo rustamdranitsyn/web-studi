@@ -534,6 +534,8 @@ header {
             max-width: 360px;
             position: relative;
             .description-seo__list-item__wrapper {
+                position: relative;
+                z-index: 999;
                 padding: 20px;
             }
             .description-seo__list-item-bg {
@@ -728,6 +730,7 @@ header {
     background: #171717;
 
     .with-us__title {
+        margin: 0;
         padding-top: 60px;
         color: #fff;
     }
@@ -965,6 +968,81 @@ header {
                 color: #FFFFFF;
             }
         }
+    }
+}
+
+.site-description {
+    margin-top: 150px;
+    padding: 40px 0;
+    background: linear-gradient(100.14deg, #F4B92F 49.22%, #FDD45E 98.19%);
+    .site-description__title {
+        margin: 0;
+    }
+    .site-description__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .site-description__item {
+            margin-top: 100px;
+            position: relative;
+            max-width: 620px;
+            .site-description__item__wrapper {
+                position: relative;
+                z-index: 999;
+                padding: 50px 20px;
+                color: #202020;
+                .site-description__item-title {
+                    font-weight: bold;
+                    font-size: 25px;
+                    line-height: 29px;
+                    margin-bottom: 12px;
+                }
+                .site-description__item-description {
+                }
+                .suitable-for {
+                    margin-top: 12px;
+                    margin-bottom: 12px;
+                    font-weight: bold;
+                    font-size: 25px;
+                    line-height: 29px;
+                }
+                .site-description__item-list li {
+                    background-repeat: no-repeat;
+                    padding-left: 35px;
+                    margin-bottom: 6px;
+                    margin-left: 0;
+                    text-align: left;
+                    font-size: 15px;
+                    background-image: url(../img/marker-white.svg);
+                    color: #000;
+                }
+                .site-description__item-btn {
+                    margin-top: 25px;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    padding: 15px 0;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: #000000;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .good-site {
+        margin-top: 50px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 47px;
+        color: #202020;
+    }
+    .site-description__btn {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
     }
 }
 
