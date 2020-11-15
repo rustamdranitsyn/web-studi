@@ -817,6 +817,7 @@ header {
     .developer-price__wrapper {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         .developer-price__item {
             max-width: 300px;
             border: 3px solid rgba(244, 185, 47, 0.5);
@@ -885,7 +886,9 @@ header {
     .stages-development__wrapper {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         .stages-development__item {
+            margin-top: 10px;
             max-width: 300px;
             .stages-development__item-step {
                 font-weight: bold;
@@ -983,13 +986,13 @@ header {
         justify-content: space-between;
         flex-wrap: wrap;
         .site-description__item {
-            margin-top: 100px;
+            margin-top: 50px;
             position: relative;
             max-width: 620px;
             .site-description__item__wrapper {
                 position: relative;
                 z-index: 999;
-                padding: 50px 20px;
+                padding: 30px 20px;
                 color: #202020;
                 .site-description__item-title {
                     font-weight: bold;

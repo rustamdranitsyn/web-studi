@@ -61,6 +61,21 @@
     .with-us .with-us__wrapper {
         padding-top: 30px;
     }
+    .important-developer {
+        .important-developer__wrapper {
+            .important-developer__left {
+                display: none;
+            }
+        }
+    }
+    .developer-price {
+        .developer-price__wrapper {
+            justify-content: center;
+            .developer-price__item {
+                margin: 20px;
+            }
+        }
+    }
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
@@ -96,5 +111,19 @@
     }
     .with-us .with-us__wrapper  {
         padding-top: 0px;
+    }
+    .stages-development {
+        .stages-development__wrapper {
+            justify-content: center;
+            .stages-development__item {
+                margin-top: 20px;
+            }
+        }
+    }
+    .adv-developer__wrapper {
+        justify-content: center;
+    }
+    .important-developer__left {
+        display: none;
     }
 }
