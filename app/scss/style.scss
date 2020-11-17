@@ -9,6 +9,7 @@ body .lock {
 
 header {
     position: relative;
+    background: linear-gradient(100.49deg, #F4B92F 63.25%, #FBCF56 98.17%);
 }
 
 .top-bar {
@@ -813,6 +814,9 @@ header {
 }
 
 // Разработка
+.img-top-developer {
+    top: 30px;
+}
 .developer-price {
     .developer-price__wrapper {
         display: flex;
@@ -1074,7 +1078,7 @@ header {
             background-color: #fff;
             color: #000;
             max-width: 500px;
-            height: 510px;
+            height: 100%;
             padding: 30px;
             position: relative;
 

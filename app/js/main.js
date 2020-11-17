@@ -4,6 +4,7 @@ $(function () {
       $(this).toggleClass('open');
    })
 });
+
 window.onload = function () {
    const popupLinks = document.querySelectorAll('.popup-link'),
       body = document.querySelector('body'),
