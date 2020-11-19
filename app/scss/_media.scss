@@ -6,7 +6,9 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        
+    }
+    .question-seo__wrapper .question-seo__block {
+        max-width: 48%;
     }
 }
 
@@ -19,6 +21,9 @@
     }
     .price-promotion__wrapper {
         justify-content: center;
+    }
+    .top-advertising {
+        display: none;
     }
 }
 
@@ -75,6 +80,65 @@
                 margin: 20px;
             }
         }
+    }
+    .kinds__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .kinds__item {
+            margin-top: 35px;
+            max-width: 380px;
+            .kings__item-title {
+                margin-top: 10px;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+                color: #FFFFFF;
+            }
+            .kings__item-description {
+                margin-top: 5px;
+                font-size: 13px;
+                line-height: 1.6em;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+            }
+        }
+    }
+    .advantages-ordering {
+        .advantages-ordering__wrapper {
+            justify-content: center;
+            .advantages-ordering-block {
+                max-width: 100%;
+            }
+            .advantages-ordering__right {
+                display: none;
+            }
+        }
+    }
+    .advertising-basics {
+        .advertising-basics__wrapper {
+            justify-content: center;
+            .advertising-basics_block {
+                .advertising-basics_block-title {
+                }
+                .advertising-basics_block-subtitle {
+                    margin-top: 5px;
+                }
+                .advertising-basics_block-description {
+                    margin-top: 15px;
+                }
+            }
+            .advertising-basics__right {
+                margin-top: 20px;
+            }
+        }
+    }
+    .why-advertising .why-advertising__title-btn {
+        margin-top: 50px;
+    }
+    .advertising-goals .advertising-goals__subtitle {
+        margin-top: 30px;
+        margin-bottom: 15px;
     }
 }
 
@@ -139,5 +203,14 @@
                 }
             }
         }
+    }
+    .advertising-basics_block-img {
+        display: none;
+    }
+    .kinds-title {
+        margin: 0;
+    }
+    .advertising-goals {
+        padding: 10px 0 20px 0;
     }
 }

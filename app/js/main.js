@@ -1,7 +1,15 @@
-$(function () {
-   $('.faq_item_title_inner').on('click', function () {
-      $(this).parents('.faq_item').find('.faq_item_body').slideToggle(300);
-      $(this).toggleClass('open');
+// $(function () {
+//    $('.faq_item_title_inner').on('click', function () {
+//       $(this).parents('.faq_item').find('.faq_item_body').slideToggle(300);
+//       $(this).toggleClass('open');
+//    })
+// });
+
+document.querySelectorAll('.faq_item_title_inner').forEach(el => {
+   el.addEventListener('click', function () {
+      let slide = this.closest('.faq_item').querySelector('.faq_item_body');
+      slide.style.display = (slide.offsetWidth > 0 || slide.offsetHeight > 0) ? 'none' : 'block';
+      this.classList.toggle('open');
    })
 });
 

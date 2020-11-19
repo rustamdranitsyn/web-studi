@@ -396,7 +396,7 @@ header {
 }
 
 .top-description-wrapper {
-    padding-top: 150px;
+    
     display: flex;
     flex-direction: column;
     max-width: 650px;
@@ -418,6 +418,16 @@ header {
     .top-order {
         margin-top: 65px;
     }
+}
+.top-description-wrapper__context {
+    padding: 100px 0;
+}
+.top-description-wrapper__seo {
+    padding-top: 150px;
+}
+.top-description-wrapper__developer {
+    padding-top: 100px;
+    padding-bottom: 49px;
 }
 
 .price-promotion {
@@ -1066,6 +1076,7 @@ header {
 }
 .kinds__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     .kinds__item {
         max-width: 380px;
@@ -1089,6 +1100,7 @@ header {
     padding: 40px 0 80px 0;
     .advertising-basics__wrapper {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         .advertising-basics_block {
             max-width: 600px;
