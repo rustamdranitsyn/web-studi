@@ -1205,6 +1205,62 @@ header {
     }
 }
 
+.top-description-wrapper__site-card {
+    padding: 100px 0 50px 0;
+    .top-description-wrapper__site-card_top {
+        display: flex;
+        .top-description-wrapper__site-card__left {
+            width: 50%;
+            span {
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 29px;
+                color: #202020;
+            }
+            ul {
+                margin: 20px 0 30px 0;
+                li {
+                    background-image: url(../img/marker-gold.svg);
+                }
+            }
+        }
+        .top-description-img {
+            width: 50%;
+        }
+    }
+}
+.top-card-order {
+    .top-card-order__bg {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        .top-card-order__wrapper {
+            padding-left: 60px;
+            padding-right: 200px;
+            display: flex;
+            justify-content: space-between;
+            .top-card-order__item {
+                padding: 30px 0 15px 0;
+                display: flex;
+                flex-direction: column;
+                .top-card-order__item-title {
+                    font-weight: bold;
+                    font-size: 25px;
+                    line-height: 29px;
+                    color: #202020;
+                }
+                .top-card-order__item-price {
+                    margin-top: 15px;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 25px;
+                }
+                .btn {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
 .card-start {
     padding: 50px 0;
     background: #171717;
