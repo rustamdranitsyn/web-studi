@@ -134,6 +134,27 @@ header {
         &:first-child {
             padding: 0;
         }
+        a {
+            display: inline-block;
+            line-height: 1;
+            text-decoration: none;
+            cursor: pointer;
+            &::after {
+                margin-top: 2px;
+                background-color: #202020;
+                display: block;
+                content: "";
+                height: 2px;
+                width: 0%;
+                -webkit-transition: width .3s ease-in-out;
+                -moz--transition: width .3s ease-in-out;
+                transition: width .3s ease-in-out;
+            } 
+            &:hover::after,
+            &:focus::after {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -1209,8 +1230,9 @@ header {
     padding: 100px 0 50px 0;
     .top-description-wrapper__site-card_top {
         display: flex;
+        justify-content: space-between;
         .top-description-wrapper__site-card__left {
-            width: 50%;
+            width: 48%;
             span {
                 font-weight: bold;
                 font-size: 25px;
@@ -1223,9 +1245,6 @@ header {
                     background-image: url(../img/marker-gold.svg);
                 }
             }
-        }
-        .top-description-img {
-            width: 50%;
         }
     }
 }
@@ -1301,7 +1320,7 @@ header {
         display: flex;
         justify-content: space-between;
         .card-adaptive__left {
-            max-width: 450px;
+            width: 40%;
             .card-adaptive__left-title {
                 display: block;
                 margin-top: 25px;
