@@ -410,11 +410,11 @@ header {
     z-index: 9;
 }
 
-.top-rocket {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+// .top-rocket {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+// }
 
 .top-description {
     z-index: 10;
@@ -444,6 +444,10 @@ header {
     .top-order {
         margin-top: 65px;
     }
+}
+.top-description-block {
+    display: flex;
+    justify-content: space-between;
 }
 .top-description-wrapper__context {
     padding: 100px 0;
@@ -849,7 +853,7 @@ header {
 
 // Разработка
 .img-top-developer {
-    top: 30px;
+    margin-top: 40px;
 }
 .developer-price {
     .developer-price__order {
@@ -1087,11 +1091,6 @@ header {
     }
 }
 // Страница рекламы
-.top-advertising {
-    position: absolute;
-    top: 50px;
-    right: 115px;
-}
 .kinds {
     background: #171717;
     padding: 60px 0;
@@ -1211,17 +1210,13 @@ header {
             max-width: 50%;
         }
         .advantages-ordering__left {
+            padding-top: 50px;
             .advantages-ordering__left-title {
                 font-weight: bold;
                 font-size: 25px;
                 line-height: 29px;
                 color: #202020;
             }    
-        }
-        .advantages-ordering__right img {
-            position: absolute;
-            top: 0;
-            right: 0;
         }
     }
 }
