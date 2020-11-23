@@ -37,6 +37,11 @@
     .card-adaptive .card-adaptive__wrapper .card-adaptive__left {
         width: 100%;
     }
+    .process-developer__wrapper {
+        .process-developer__item {
+            margin-top: 20px;
+        }
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -173,6 +178,9 @@
                 }
             }
         }
+    }
+    .process-developer__wrapper {
+        justify-content: center;
     }
     
 }
