@@ -5,7 +5,6 @@
     .nav-header {
         width: 100%;
         display: flex;
-        justify-content: space-between;
     }
     .question-seo__wrapper .question-seo__block {
         max-width: 48%;
@@ -41,6 +40,12 @@
         .process-developer__item {
             margin-top: 20px;
         }
+    }
+    .price-promotion__item {
+        margin-top: 20px;
+    }
+    .description-seo__list-item {
+        margin-top: 20px;
     }
 }
 
@@ -119,15 +124,13 @@
             }
         }
     }
-    .advantages-ordering {
-        .advantages-ordering__wrapper {
-            justify-content: center;
-            .advantages-ordering-block {
-                max-width: 100%;
-            }
-            .advantages-ordering__right {
-                display: none;
-            }
+    .advantages-ordering__wrapper {
+        justify-content: center;
+        .advantages-ordering-block {
+            max-width: 100%;
+        }
+        .advantages-ordering__right {
+            display: none;
         }
     }
     .advertising-basics {

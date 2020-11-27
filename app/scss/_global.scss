@@ -28,6 +28,22 @@ li {
     margin: 0;
     padding: 0;
 }
+.breadcrumbs {
+    display: flex;
+    li {
+        color: #000;
+        padding-left: 10px;
+        span {
+        padding-left: 10px;
+        }
+        &:first-child {
+            padding: 0;
+        }
+    }
+    .breadcrumbs-active {
+        color: #202020;
+    }
+}
 
 button {
     outline: none;
@@ -83,7 +99,6 @@ a:hover {
     padding: 16px 50px;
     color: #202020;
     background: $gold;
-    font-weight: bold;
     font-size: 18px;
     line-height: 21px;
     color: #202020;

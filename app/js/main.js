@@ -1,10 +1,4 @@
-// $(function () {
-//    $('.faq_item_title_inner').on('click', function () {
-//       $(this).parents('.faq_item').find('.faq_item_body').slideToggle(300);
-//       $(this).toggleClass('open');
-//    })
-// });
-
+// блок вопрос-ответ
 document.querySelectorAll('.faq_item_title_inner').forEach(el => {
    el.addEventListener('click', function () {
       let slide = this.closest('.faq_item').querySelector('.faq_item_body');
@@ -12,7 +6,7 @@ document.querySelectorAll('.faq_item_title_inner').forEach(el => {
       this.classList.toggle('open');
    })
 });
-
+// модалка
 window.onload = function () {
    const popupLinks = document.querySelectorAll('.popup-link'),
       body = document.querySelector('body'),
@@ -88,4 +82,37 @@ window.onload = function () {
       }, timeout);
    }
 }
-
+// // Кнопка наверх
+// function scrollTo(to, duration = 700) {
+//    const
+//       element = document.scrollingElement || document.documentElement,
+//       start = element.scrollTop,
+//       change = to - start,
+//       startDate = +new Date(),
+//       easeInOutQuad = function (t, b, c, d) {
+//          t /= d / 2;
+//          if (t < 1) return c / 2 * t * t + b;
+//          t--;
+//          return -c / 2 * (t * (t - 2) - 1) + b;
+//       },
+//       animateScroll = function () {
+//          const currentDate = +new Date();
+//          const currentTime = currentDate - startDate;
+//          element.scrollTop = parseInt(easeInOutQuad(currentTime, start, change, duration));
+//          if (currentTime < duration) {
+//             requestAnimationFrame(animateScroll);
+//          }
+//          else {
+//             element.scrollTop = to;
+//          }
+//       };
+//    animateScroll();
+// }
+// document.addEventListener('DOMContentLoaded', function () {
+//    let btn = document.querySelector('#toTop');
+//    // При клике прокручиываем на самый верх
+//    btn.onclick = function (click) {
+//       click.preventDefault();
+//       scrollTo(0, 400);
+//    }
+// });
