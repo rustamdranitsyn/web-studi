@@ -187,7 +187,11 @@
     }
     
 }
-
+@media all and (max-width: 768px) {
+    .item-head {
+        margin-top: 4rem;
+    }
+}
 @media all and (min-width: 480px) and (max-width: 768px) {
     .container{
         max-width: 100%;
