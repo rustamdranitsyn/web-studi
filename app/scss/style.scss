@@ -817,6 +817,9 @@ header {
         background: #3A3838;
         border-radius: 10px;
     }
+    .works-list-open ul {
+        padding-bottom: 1px;
+    }
 }
 
 .with-us {
@@ -874,6 +877,7 @@ header {
     }
 
     .with-us__information-ssessment {
+        margin: 0;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 50px;
@@ -924,7 +928,7 @@ header {
         display: flex;
         flex-direction: column;
         .question-smm__item-title {
-            margin-top: 10px;
+            margin-top: 15px;
             font-weight: bold;
             line-height: 18px;
             color: #202020;
@@ -1207,7 +1211,7 @@ header {
 
     .kinds__item {
         margin-top: 65px;
-        max-width: 380px;
+        width: 380px;
 
         .kings__item-title {
             margin-top: 15px;
@@ -1480,6 +1484,7 @@ header {
 }
 
 .other-offers {
+    margin-bottom: 50px;
     margin-top: 65px;
 }
 
@@ -1556,13 +1561,13 @@ header {
 }
 
 .price-instagram {
+    margin-bottom: 50px;
     .price-instagram_bold {
         display: block;
         margin-top: 80px;
         margin-bottom: 40px;
         font-weight: bold;
         font-size: 20px;
-        line-height: 23px;
         color: #202020;
     }
 }
@@ -1598,6 +1603,12 @@ header {
     background: #171717;
     h2 {
         color: #FFFFFF;
+        span {
+            color: $gold;
+        }
+    }
+    .list-item-head {
+        max-width: 95%;
     }
 }
 
@@ -1829,7 +1840,7 @@ header {
 
 .fqa {
     background: $gold;
-
+    padding-bottom: 50px;
     .fqa__title {
         padding-top: 40px;
     }
@@ -1940,4 +1951,58 @@ header {
     }
 }
 
+footer {
+    background: #171717;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+}
+.footer__wrapper {
+    flex-wrap: wrap;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__block__item-one {
+    margin-right: 80px;
+}
+.footer__left {
+    display: flex;
+}
+.footer__block__item {
+    li {
+        margin-top: 15px;
+    }
+    .footer__block__item-title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+.footer-info {
+    display: flex;
+    .footer-info__link {
+        margin-left: 10px;
+    }
+}
+.footer__block__item-title {
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-info {
+    margin-top: 15px;
+}
+.copyright {
+    display: block;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.footer-info-order {
+    margin-top: 20px;
+}
 @import "media";

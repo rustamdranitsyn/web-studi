@@ -195,7 +195,7 @@
 @media all and (min-width: 480px) and (max-width: 768px) {
     .container{
         max-width: 100%;
-        margin: 0 15px;
+        padding: 0 15px;
     }
 }
 
@@ -208,10 +208,10 @@
         padding-top: 50px;
     }
     .btn-black {
-        padding: 10px 20px;
+        padding: 15px 25px;
     }
     .btn-gold {
-        padding: 10px 20px;
+        padding: 15px 25px;
     }
     .top-order {
         margin-top: 10px;
@@ -262,5 +262,29 @@
     }
     .advertising-goals {
         padding: 10px 0 20px 0;
+    }
+    .footer__block__item-title-contact {
+        margin-top: 30px;
+    }
+    .developer-price__wrapper {
+        margin: 0;
+    }
+    .question-smm .question-smm__item {
+        margin-top: 20px;
+    }
+    .price-instagram .price-instagram_bold {
+        margin: 0;
+    }
+    .advantages-ordering__wrapper .advantages-ordering__left {
+        padding-top: 20px;
+    }
+    .tabs-head {
+        margin: 0rem 0 4rem;
+    }
+    .question-smm {
+        padding: 20px 0 45px 0;
+    }
+    #toTop {
+        right: 20px;
     }
 }
