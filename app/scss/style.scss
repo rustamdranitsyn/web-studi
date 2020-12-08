@@ -179,7 +179,31 @@ header {
 .nav-item-active {
     border-bottom: 2px solid #202020;
 }
+.nav-item-active:hover {
+    a {
+        display: inline-block;
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
 
+        &::after {
+            margin-top: 5px;
+            background-color: #202020;
+            display: block;
+            content: "";
+            height: 2px;
+            width: 0%;
+            -webkit-transition: width .3s ease-in-out;
+            -moz--transition: width .3s ease-in-out;
+            transition: width .3s ease-in-out;
+        }
+
+        &:hover::after,
+        &:focus::after {
+            width: 0;
+        }
+    }
+}
 
 /* Начало мобильного меню */
 .hamburger-menu {
@@ -563,21 +587,6 @@ header {
             line-height: 29px;
             color: #000000;
         }
-
-        .price-promotion__item__order {
-            margin-top: 48px;
-            display: block;
-
-            a {
-                background: $gold;
-                border-radius: 50px;
-                padding: 12px 72px;
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 21px;
-                color: #202020;
-            }
-        }
     }
 
     .price-promotion__item-center {
@@ -599,7 +608,19 @@ header {
         }
     }
 }
+.price-promotion__item__order {
+    margin-top: 48px;
+    display: block;
 
+    a {
+        background: $gold;
+        border-radius: 50px;
+        padding: 12px 72px;
+        font-size: 18px;
+        line-height: 21px;
+        color: #202020;
+    }
+}
 .description-seo {
     background: linear-gradient(100.49deg, #F4B92F 63.25%, #FBCF56 98.17%);
 
@@ -821,7 +842,50 @@ header {
         padding-bottom: 1px;
     }
 }
-
+.private-seo__desciprtion {
+    font-size: 18px;
+    max-width: 1026px;
+    margin: 0 auto;
+    text-align: center;
+}
+.private-seo {
+    table {
+        width: 100%;
+        .tbody {
+            display: block;
+        }
+        tr {
+            padding-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #F2F0F0;
+        }
+        td {
+            font-size: 18px;
+            line-height: 29px;
+            color: #202020;
+            min-width: 100px;
+        }
+    }
+    seo-price-one {
+        display: block;
+        height: 500px;
+    }
+    
+    .seo-price-hiden {
+        display: none;
+    }
+}
+.seo-price-btn {
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+    background: #202020;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
 .with-us {
     position: relative;
     background: #171717;
@@ -1727,6 +1791,96 @@ header {
 }
 .active-block {
     display: block!important;
+}
+.audit-description {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background: #171717;
+    color: #fff;
+    h2 {
+        color: #fff;
+    }
+    h3 {
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 25px;
+    }
+}
+.audit-options__wrapper {
+    padding: 30px 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    border: 3px solid rgba(244, 185, 47, 0.5);
+    .audit-options__item {
+        margin-top: 30px;
+        display: flex;
+        .audit-options__item-right {
+            margin-left: 30px;
+            h3 {
+                margin: 0;
+                line-height: 29px;
+                color: #202020;
+            }
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+.audit-white {
+    margin-top: 60px;
+    background: #171717;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    h2 {
+        color: #fff;
+    }
+    .audit__wrapper {
+        position: relative;
+    }
+}
+.audit__wrapper {
+    margin-top: 50px;
+    position: relative;
+    h3 {
+        margin-top: 30px;
+        margin-bottom: 0;
+        &::before {
+            color: #ffd11a;
+            content: "•";
+            padding-right: 20px;
+            display: inline-block;
+            font-size: 40px;
+        }
+    }
+    p {
+        &::after {
+            margin-top: 7px;
+            display: block;
+            position: absolute;
+            content: "";
+            height: 1px;
+            width: 160px;
+            background-color: #E7E7E7;
+            left: 0px;
+        }
+        &:last-child::after {
+            width: 100%!important;
+        }
+    }
+}
+.order-audit__price {
+    margin-top: 35px;
+    font-size: 25px;
+}
+.order-audit__wrapper {
+    margin-top: 45px;
+    display: flex;
+}
+.order-audit-btn-black {
+    margin-left: 15px;
 }
 .popup {
     z-index: 10000;

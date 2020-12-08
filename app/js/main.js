@@ -213,3 +213,6 @@ function oneTab7() {
    tab7.classList.add('active-block');
 }
 
+
+
+// разворачивание прайс-лист

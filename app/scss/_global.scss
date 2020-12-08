@@ -29,6 +29,7 @@ li {
     margin: 0;
     padding: 0;
 }
+
 .breadcrumbs {
     display: flex;
     li {
@@ -68,7 +69,10 @@ a:hover {
     line-height: 47px;
     color: #202020;
 }
-
+.h2-bold {
+    font-weight: bold;
+    font-size: 25px;
+}
 .no-marker li {
     background-repeat: no-repeat;
     padding-left: 35px;
