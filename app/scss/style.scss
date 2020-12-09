@@ -1551,6 +1551,66 @@ header {
     margin-bottom: 50px;
     margin-top: 65px;
 }
+.options-context {
+    margin-bottom: 80px;
+}
+.context-price {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.context-price__item {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgba(244,185,47,0.5);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.25);
+}
+.context-price__item-title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    color: #202020;
+}
+.context-price__item-price {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    color: #F4B92F;
+}
+.context-price__item__wrapper {
+    padding: 30px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.context-price__item-description {
+    margin-top: 30px;
+    li {
+        background-repeat: no-repeat;
+        padding-left: 35px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        text-align: left;
+        font-size: 15px;
+        background-image: url(../img/marker-gold-2.svg);
+    }
+}
+.context__item__order {
+    margin-top: 20px;
+    display: block;
+    a {
+        background: #F4B92F;
+        border-radius: 50px;
+        padding: 12px 72px;
+        font-size: 18px;
+        line-height: 21px;
+        color: #202020;
+    }
+}
 
 .other-offers__wrapper {
     max-width: 1025px;
@@ -1882,6 +1942,16 @@ header {
 .order-audit-btn-black {
     margin-left: 15px;
 }
+.oreder-seo-audit {
+    p {
+        font-size: 15px;
+        line-height: 21px;
+        color: #202020;
+    }
+}
+.oreder-seo-audit__wrapper {
+    display: flex;
+}
 .popup {
     z-index: 10000;
     position: fixed;
@@ -1942,6 +2012,7 @@ header {
 }
 
 .input {
+    display: flex;
     position: relative;
     padding: 15px 20px;
     margin-top: 15px;
@@ -2017,18 +2088,18 @@ header {
 }
 
 .icon-comment {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
     margin-top: 30px;
     background: url(../img/comment.svg) no-repeat top left;
 }
 
 .icon-popup {
     z-index: 10;
-    position: absolute;
     display: block;
     width: 27px;
     height: 27px;
-    right: 0;
-    margin-right: 10px;
 }
 
 .open {
