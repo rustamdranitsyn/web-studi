@@ -144,3 +144,21 @@ a:hover {
     opacity: 0.5;
     border: 1px solid #FFFFFF;
 }
+.breadcrumb {
+    display: flex;
+    padding-left: 0;
+    li {  
+        a {
+            color: #000;
+            transition: 0.3ms;
+            &::after {
+                content: "/";
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+    .active {
+        color: #202020;
+    }
+}

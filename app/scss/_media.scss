@@ -47,6 +47,13 @@
     .description-seo__list-item {
         margin-top: 20px;
     }
+    .oreder-seo-audit__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-top-block {
+        background: none;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -191,7 +198,18 @@
     .process-developer__wrapper {
         justify-content: center;
     }
-    
+    .audit-options__item-left img {
+        display: none;
+    }
+    .home-top-block__right {
+        display: none;
+    }
+    .home-seo__right {
+        display: none;
+    }
+    .home-context__description__right {
+        display: none;
+    }
 }
 @media all and (max-width: 768px) {
     .item-head {
@@ -292,5 +310,9 @@
     }
     #toTop {
         right: 20px;
+    }
+    .audit__wrapper h3::before {
+        padding: 0;
+        display: none;
     }
 }
