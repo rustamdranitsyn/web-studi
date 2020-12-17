@@ -633,7 +633,7 @@ header {
     z-index: 500;
     position: relative;
     margin: 0 auto;
-    max-width: 1086px;
+    max-width: 1145px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -648,6 +648,7 @@ header {
     background: #fff;
 
     .price-promotion__item-wrapper {
+        width: 380px;
         padding: 25px 50px;
         display: flex;
         flex-direction: column;
@@ -1741,6 +1742,17 @@ header {
                 background-image: url(../img/marker-gold.svg);
             }
         }
+
+        .price-promotion__item__order {
+            text-align: center;
+        }
+        .price-promotion__item_price {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 35px;
+            color: #202020;
+            text-align: center;
+        }
     }
 }
 
@@ -2018,6 +2030,20 @@ header {
             width: 100%!important;
         }
     }
+}
+.order-magazin__wrapper {
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order-magazin__title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    color: #202020;
 }
 .order-audit__price {
     margin-top: 35px;
