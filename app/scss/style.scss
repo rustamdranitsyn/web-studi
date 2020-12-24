@@ -204,7 +204,26 @@ header {
         }
     }
 }
-
+.submenu {
+    transition-duration: 0,3ms;
+    z-index: 999;
+    background: #f7ce6e;
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    li {
+        padding: 5px 8px;
+        font-size: 16px;
+        margin-left: 0;
+        a {
+            min-width: 150px;
+        }
+    }
+}
+.nav-header li:hover .submenu {
+    visibility: visible;
+}
 /* Начало мобильного меню */
 .hamburger-menu {
     margin-right: 30px;
@@ -626,7 +645,7 @@ header {
 
 .price-promotion {
     position: relative;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .price-promotion__wrapper {
@@ -1085,6 +1104,9 @@ header {
             font-weight: bold;
             line-height: 18px;
             color: #202020;
+        }
+        img {
+            max-height: 76px;
         }
     }
 }
@@ -1726,7 +1748,9 @@ header {
         max-width: 380px;
         display: flex;
         flex-direction: column;
-
+        img {
+            max-height: 96px;
+        }
         .process-developer__item-title {
             margin-top: 30px;
             text-align: center;
