@@ -631,15 +631,18 @@ header {
 }
 
 .top-description-wrapper__context {
-    padding: 100px 0;
+    padding: 80px 0;
+}
+.about-img {
+    margin-top: -60px;
 }
 
 .top-description-wrapper__seo {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .top-description-wrapper__developer {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 49px;
 }
 
@@ -727,6 +730,10 @@ header {
         font-size: 18px;
         line-height: 21px;
         color: #202020;
+        transition: all ease .15s;
+    }
+    a:hover {
+        background: #FCC954;
     }
 }
 .description-seo {
@@ -1081,7 +1088,46 @@ header {
         }
     }
 }
-
+// Контакты
+.top-bg-contact {
+    background: linear-gradient(100.14deg, #FFFFFF 49.22%, #FDD45E 98.19%);
+}
+.top-description-contact {
+    padding: 80px 0;
+}
+.top-description-contact__wrapper {
+    margin-top: 80px;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+.top-description-contact__item {
+    display: flex;
+    flex-direction: column;
+    .link {
+        display: block;
+        margin-top: 25px;
+        font-weight: bold;
+        font-size: 25px;
+        color: #202020;
+        transition: 0s;
+        &:hover {
+            color: #F4B92F;
+            transition-delay: 0.8ms;
+        }
+    }
+    .top-description-contact__item-description {
+        margin-top: 25px;
+        font-size: 25px;
+        color: #202020;
+    }
+    .top-description-contact__item-description-phone {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
 // Разработка
 .img-top-developer {
     margin-top: 40px;
@@ -1158,6 +1204,10 @@ header {
                 font-size: 18px;
                 color: #202020;
                 padding: 10px 65px;
+                transition: all ease .15s;
+            }
+            .btn-developer:hover {
+                background: #FCC954;
             }
         }
     }
@@ -1720,6 +1770,10 @@ header {
         font-size: 18px;
         line-height: 21px;
         color: #202020;
+        transition: all ease .15s;
+    }
+    a:hover {
+        background: #FCC954;
     }
 }
 
@@ -2107,6 +2161,21 @@ header {
 .oreder-seo-audit p {
     text-align: center;
 }
+.about-certificates {
+    margin-bottom: 100px;
+}
+.about-certificates__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .about-certificates__item {
+        border: 3px solid rgba(244,185,47,0.5);
+        box-shadow: 0px 15px 30px rgba(0,0,0,0.25);
+        margin: 0 10px;
+        img {
+            max-width: 400px;
+        }
+    }
+}
 .popup {
     z-index: 10000;
     position: fixed;
@@ -2189,6 +2258,7 @@ header {
     z-index: 1;
 
     textarea {
+        max-height: 150px;
         display: block;
         position: relative;
         width: 100%;
@@ -2216,6 +2286,11 @@ header {
     line-height: 28px;
     color: #202020;
     text-transform: uppercase;
+    transition: all ease .15s;
+}
+
+.btn-success:hover {
+    background: #FCC954;
 }
 
 .fqa {

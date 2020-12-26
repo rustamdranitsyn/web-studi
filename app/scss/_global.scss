@@ -98,6 +98,11 @@ a:hover {
     color: #FFFFFF;
     background: #202020;
     border-radius: 50px;
+    transition: all ease .15s;
+}
+
+.btn-black:hover {
+    background:#202015;
 }
 
 .btn-gold {
@@ -108,6 +113,12 @@ a:hover {
     line-height: 21px;
     color: #202020;
     border-radius: 50px;
+    border: none;
+    transition: all ease .15s;
+}
+
+.btn-gold:hover {
+    background: #FCC954;
 }
 
 .works-list-open {

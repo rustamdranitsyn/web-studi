@@ -54,6 +54,9 @@
     .home-top-block {
         background: none;
     }
+    .about-img {
+        display: none;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -210,10 +213,30 @@
     .home-context__description__right {
         display: none;
     }
+    .about-certificates__wrapper {
+        justify-content: center;
+        .about-certificates__item {
+            margin-top: 20px;
+        }
+    }
 }
 @media all and (max-width: 768px) {
     .item-head {
         margin-top: 4rem;
+    }
+    .top-description-contact__wrapper {
+        .row {
+            justify-content: center;
+            .top-description-contact__item {
+                margin-top: 30px;
+                .top-description-contact__item-description {
+                    margin-top: 10px;
+                }
+                .top-description-contact__item-description-phone {
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 }
 @media all and (min-width: 480px) and (max-width: 768px) {
@@ -317,5 +340,8 @@
     }
     .card-start__wrapper {
         margin-top: 50px;
+    }
+    .about-certificates__wrapper .about-certificates__item img {
+        max-width: 325px;
     }
 }
