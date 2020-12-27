@@ -820,16 +820,17 @@ header {
             margin-top: 20px;
         }
     }
-
-    .question-seo__left-block {
-        .question-seo__nav-left li {
-            background-image: url(../img/marker-green.svg);
-        }
-    }
-
     .question-seo__right-block {
         .question-seo__nav-righ li {
-            background-image: url(../img/marker-red.svg);
+            display: flex;
+            .red-marker-context {
+                background: url(../img/marker-red.svg) no-repeat top left;;
+                display: flex;
+                width: 50px;
+                height: 15px;
+                margin-top: 5px;
+                margin-right: 20px;
+            }
         }
     }
 
@@ -837,7 +838,32 @@ header {
         margin-top: 20px;
     }
 }
-
+.question-seo__nuans {
+          li {
+          padding-left: 0;
+          display: flex;
+          margin-bottom: 25px;
+          max-width: 500px;
+          &::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            margin-top: 4px;
+            padding-right: 30px;
+            display: block;
+          }
+      }
+}
+.red-marker-context {
+    &::before {
+        background: url(../img/marker-red.svg) no-repeat top left;
+    }
+}
+.green-marker-context {
+    &::before {
+        background: url(../img/marker-green.svg) no-repeat top left;
+    }
+}
 .important-seo {
     background: #171717;
 
@@ -1067,8 +1093,14 @@ header {
 }
 
 .seo-nuances__wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". .";
 
     .seo-nuances__item {
         max-width: 580px;
@@ -1211,6 +1243,9 @@ header {
             }
         }
     }
+    .developer-price__item:hover {
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.35);
+    }
 }
 
 .stages-development {
@@ -1232,9 +1267,14 @@ header {
         flex-wrap: wrap;
 
         .stages-development__item {
+            position: relative;
             margin-top: 10px;
             max-width: 300px;
-
+            .stages-development__item__wrapper {
+                padding: 10px;
+                z-index: 999;
+                position: relative;
+            }
             .stages-development__item-step {
                 font-weight: bold;
                 font-size: 20px;
@@ -1728,6 +1768,9 @@ header {
     flex-direction: column;
     border: 3px solid rgba(244,185,47,0.5);
     box-shadow: 0px 15px 30px rgba(0,0,0,0.25);
+}
+.context-price__item:hover {
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.35);
 }
 .context-price__item-title {
     font-weight: bold;
