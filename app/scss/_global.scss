@@ -129,10 +129,19 @@ a:hover {
         padding-left: 25px;
 
         li {
-            background-image: url(../img/marker-gold.svg);
+            display: flex;
             font-size: 15px;
             line-height: 18px;
             color: #000000;
+            &::before {
+                content: '';
+                width: 15px;
+                height: 20px;
+                margin-top: 0px;
+                padding-right: 30px;
+                display: block;
+                background: url(../img/marker-gold.svg) no-repeat;
+            }
         }
     }
 

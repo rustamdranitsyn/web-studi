@@ -571,6 +571,9 @@ header {
         }
     }
 }
+.input-home {
+    width: 88%!important;
+}
 .home-top-block__left {
     h1 {
         margin-top: 100px;
@@ -673,7 +676,7 @@ header {
     background: #fff;
 
     .price-promotion__item-wrapper {
-        width: 380px;
+        max-width: 380px;
         padding: 25px 50px;
         display: flex;
         flex-direction: column;
@@ -688,9 +691,17 @@ header {
 
         .price-promotion__item__list-services {
             margin-top: 35px;
-
             li {
-                background-image: url(../img/marker.svg);
+                display: flex;
+                &::before {
+                    content: '';
+                    width: 15px;
+                    height: 20px;
+                    margin-top: 3px;
+                    padding-right: 30px;
+                    display: block;
+                    background: url(../img/marker.svg) no-repeat;
+                }
             }
         }
 
@@ -857,6 +868,24 @@ header {
           }
       }
 }
+
+
+.list-gold {
+    li {
+        display: flex;
+        &::before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            margin-top: 3px;
+            padding-right: 30px;
+            display: block;
+            background: url(../img/marker-gold.svg) no-repeat top left;
+        }
+    }
+}
+
+
 .red-marker-context {
     &::before {
         background: url(../img/marker-red.svg) no-repeat top left;
@@ -1640,10 +1669,6 @@ header {
 
             ul {
                 margin: 20px 0 30px 0;
-
-                li {
-                    background-image: url(../img/marker-gold.svg);
-                }
             }
         }
     }
@@ -1861,10 +1886,6 @@ header {
 
         .process-developer__item-list {
             margin-top: 20px;
-
-            li {
-                background-image: url(../img/marker-gold.svg);
-            }
         }
 
         .price-promotion__item__order {
