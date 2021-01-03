@@ -1,6 +1,6 @@
 @media all and (min-width: 1024px) and (max-width: 1280px) {
     .container {
-        max-width: 940px;
+        max-width: 95%;
     }
     .nav-header {
         width: 100%;
@@ -215,6 +215,11 @@
             margin-top: 20px;
         }
     }
+    .modal-body {
+        .sd-city-items {
+            column-count: 3;
+        }
+    }
 }
 @media all and (max-width: 768px) {
     .item-head {
@@ -232,6 +237,11 @@
                     margin-top: 10px;
                 }
             }
+        }
+    }
+    .modal-body {
+        .sd-city-items {
+            column-count: 2;
         }
     }
 }
@@ -343,5 +353,10 @@
     .seo-nuances__wrapper {
         display: flex;
         flex-direction: column;
+    }
+    .modal-body {
+        .sd-city-items {
+            column-count: 1;
+        }
     }
 }
