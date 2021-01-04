@@ -3,6 +3,7 @@
 @import "fonts";
 @import "global";
 
+
 body .lock {
     overflow: hidden;
 }
@@ -28,6 +29,11 @@ header {
 
     a {
         color: #fff;
+    }
+}
+td {
+    a {
+        color: #F4B92F;
     }
 }
 
@@ -564,7 +570,7 @@ header {
     background-color: #fff;
     color: #000;
     max-width: 300px;
-    height: 450px;
+    height: 460px;
     padding: 20px 25px;
     position: relative;
     .popup__title {
@@ -651,19 +657,18 @@ header {
 }
 
 .top-description-wrapper__context {
-    padding: 80px 0;
+    padding: 50px 0;
 }
 .about-img {
     margin-top: -60px;
 }
 
 .top-description-wrapper__seo {
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .top-description-wrapper__developer {
-    padding-top: 80px;
-    padding-bottom: 49px;
+    padding: 50px 0;
 }
 
 .price-promotion {
@@ -1074,6 +1079,7 @@ header {
     cursor: pointer;
 }
 .with-us {
+    margin-top: 50px;
     position: relative;
     background: #171717;
 
@@ -1171,7 +1177,7 @@ header {
     background: linear-gradient(100.14deg, #FFFFFF 49.22%, #FDD45E 98.19%);
 }
 .top-description-contact {
-    padding: 80px 0;
+    padding: 50px 0;
 }
 .top-description-contact__wrapper {
     margin-top: 80px;
