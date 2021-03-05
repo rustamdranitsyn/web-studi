@@ -220,6 +220,15 @@
             column-count: 3;
         }
     }
+    .blog-wrapper {
+        .blog-post {
+            flex: 0 0 49%;
+            max-width: 49%;
+        }
+    }
+    .post-text img {
+        display: none;
+    }
 }
 @media all and (max-width: 768px) {
     .item-head {
@@ -357,6 +366,12 @@
     .modal-body {
         .sd-city-items {
             column-count: 1;
+        }
+    }
+    .blog-wrapper {
+        .blog-post {
+            flex: 0 0 100%;
+            max-width: 100%;;
         }
     }
 }
