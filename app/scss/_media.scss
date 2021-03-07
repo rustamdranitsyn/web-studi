@@ -57,6 +57,16 @@
     .about-img {
         display: none;
     }
+    .post-text img {
+        height: auto;
+        max-width: 100%;
+    }
+    .top-bar__phone {
+        margin-left: 20px;
+    }
+    .top-bar__nav-menu .city-top {
+        margin-right: 30px;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -226,8 +236,11 @@
             max-width: 49%;
         }
     }
-    .post-text img {
+    .post-text .post-img {
         display: none;
+    }
+    .title-post-blog {
+        padding-top: 50px;
     }
 }
 @media all and (max-width: 768px) {
@@ -252,6 +265,9 @@
         .sd-city-items {
             column-count: 2;
         }
+    }
+    .wrapper-post-content-end {
+        flex-direction: column;
     }
 }
 @media all and (min-width: 480px) and (max-width: 768px) {
@@ -373,5 +389,11 @@
             flex: 0 0 100%;
             max-width: 100%;;
         }
+    }
+    .post-text img {
+        display: none;
+    }
+    .post-text .wrapper-nav-page {
+        width: 100%;
     }
 }

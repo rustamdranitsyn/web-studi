@@ -2676,10 +2676,37 @@ footer {
 .blog-post:hover {
     box-shadow: 0px 15px 30px rgba(0,0,0,0.35);
 }
-.blog-post__title a {
-    transition: 0.5s;
-    &:hover {
-        color: #777;
+.blog-content {
+    .blog-post__title a {
+        transition: 0.5s;
+        color: #202020;
+        &:hover {
+            color: #777;
+            text-decoration: none;
+        }
+    }
+    p {
+        margin: 0 0 15px 0;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    ul {
+        margin: 0 0 15px 30px;
+        li {
+            list-style: inside;
+        }
+    }
+    ol {
+        li {
+            list-style: decimal;
+        }
+    }
+    a {
+        color: #F4B92F;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 .blog-post__img {
@@ -2711,5 +2738,94 @@ footer {
     .active {
         background: #202020;
     }
+}
+.img-center {
+    margin: 5px auto;
+    margin-bottom: 50px;
+    display: block;
+    float: none;
+    vertical-align: top;
+    max-height: 600px;
+}
+.wrapper-nav-page {
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 50%;
+    padding: 10px;
+    .nav-page-title {
+        font-size: 22px;
+    }
+    ol>li{
+        display:block;
+        line-height: 1.2em;
+        a {
+            color: #202020;
+            text-decoration: underline;
+            font-size: 15px;
+            &:hover {
+                color: #F4B92F;
+            }
+        }
+      }
+      .nav-page-list-level-2 li {
+        margin-bottom: 5px;
+      }
+      .nav-page-list-level-2 li {
+        margin-bottom: 5px;
+    }
+      ol{
+        counter-reset:item;
+        padding-left: 15px;
+      }
+      ol>li:before{
+        counter-increment:item;
+        content:counters(item,".") ". ";
+      }
+}
+.post-content-end {
+    margin-top: 50px;
+}
+.wrapper-post-content-end {
+    background: rgba(0,0,0,.02);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    .post-about {
+        display: flex;
+        a {
+            color: #202020;
+        }
+        .photo-content-about img {
+            max-height: 140px;
+        }
+        .desc-wrapper {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .author-title {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .desc {
+                margin: 15px 0;
+            }
+        }
+    }
+    .to-share {
+        margin-top: 30px;
+        ul {
+            margin: 0;
+        }
+        .title-about-post {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+    }
+}
+.copyright-post {
+    font-size: 14px;
 }
 // конце стилей блога
