@@ -398,6 +398,11 @@
     .about-certificates__wrapper .about-certificates__item img {
         max-width: 325px;
     }
+    .slider {
+        img {
+            max-width: 325px;
+        }
+    }
     .seo-nuances__wrapper {
         display: flex;
         flex-direction: column;
@@ -421,5 +426,17 @@
     }
     .title-blog-categori {
         margin-top: 80px;
+    }
+    .slick-prev, .slick-next {
+        display: none!important;
+    }
+    .slider {
+        .slide {
+            margin: 0;
+                a {
+                height: 400px;
+                
+                }
+        }
     }
 }
