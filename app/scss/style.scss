@@ -864,7 +864,7 @@ td {
 }
 
 .description-seo {
-    background: linear-gradient(100.49deg, #F4B92F 63.25%, #FBCF56 98.17%);
+    background: linear-gradient(100.14deg, #fff 49.22%, #FDD45E 98.19%);
 
     .description-seo__title {
         padding-top: 41px;
@@ -889,6 +889,7 @@ td {
         .description-seo__list-item {
             max-width: 360px;
             position: relative;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
 
             .description-seo__list-item__wrapper {
                 position: relative;
@@ -1438,7 +1439,7 @@ td {
 .stages-development {
     margin-top: 50px;
     padding: 50px 0;
-    background: linear-gradient(100.14deg, #F4B92F 49.22%, #FDD45E 98.19%);
+    background: linear-gradient(100.14deg, #fff 49.22%, #FDD45E 98.19%);
 
     .tages-development__subtitle {
         text-align: center;
@@ -1457,6 +1458,7 @@ td {
             position: relative;
             margin-top: 10px;
             max-width: 300px;
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
 
             .stages-development__item__wrapper {
                 padding: 10px;
@@ -1566,7 +1568,7 @@ td {
 .site-description {
     margin-top: 150px;
     padding: 40px 0;
-    background: linear-gradient(100.14deg, #F4B92F 49.22%, #FDD45E 98.19%);
+    background: linear-gradient(100.14deg, #fff 49.22%, #FDD45E 98.19%);
 
     .site-description__title {
         margin: 0;
@@ -1581,7 +1583,7 @@ td {
             margin-top: 50px;
             position: relative;
             max-width: 620px;
-
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
             .site-description__item__wrapper {
                 position: relative;
                 z-index: 999;
@@ -1612,13 +1614,13 @@ td {
                     margin-left: 0;
                     text-align: left;
                     font-size: 15px;
-                    background-image: url(../img/marker-white.svg);
+                    background-image: url(../img/marker-black.png);
                     color: #000;
                 }
 
                 .site-description__item-btn {
                     margin-top: 25px;
-                    border: 1px solid #FFFFFF;
+                    border: 1px solid #C5C5C5;
                     border-radius: 10px;
                     display: flex;
                     justify-content: center;
@@ -2469,38 +2471,44 @@ td {
         border: 3px solid rgba(244, 185, 47, 0.5);
         box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
         margin: 0 10px;
+
         img {
             max-width: 400px;
             max-height: 500px;
-            vertical-align:bottom;
+            vertical-align: bottom;
         }
     }
 }
+
 .slider {
-    
+
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     .slide {
         margin: 0 20px;
-            a {
+
+        a {
             display: block;
             max-width: 427px;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             height: 500px;
-            outline:none;
-            }
+            outline: none;
+        }
     }
+
     img {
         border: 3px solid rgba(244, 185, 47, 0.5);
         max-width: 400px;
         max-height: 500px;
-        vertical-align:bottom;
+        vertical-align: bottom;
     }
 }
+
 .popup {
     z-index: 10000;
     position: fixed;
@@ -2618,8 +2626,12 @@ td {
 }
 
 .fqa {
-    background: $gold;
+    background: linear-gradient(100.14deg, #fff 49.22%, #FDD45E 98.19%);
     padding-bottom: 50px;
+
+    .faq_item {
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+    }
 
     .fqa__title {
         padding-top: 40px;
@@ -2696,6 +2708,7 @@ td {
     font-size: 25px;
     line-height: 29px;
     color: #202020;
+    border-bottom: 2px solid rgba(43, 43, 43, .1);
 }
 
 .faq_item_title_inner:hover:before {
@@ -2703,7 +2716,7 @@ td {
 }
 
 .faq_item_title_bg {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 1);
     opacity: 0.5;
     padding: 20px 0 20px 10px;
     position: absolute;
