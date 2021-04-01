@@ -6,775 +6,505 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body><header class="lock-padding top-bg-gold">
-  <div class="mob-header">
-    <div class="container">
-      <div class="mob-menu__wrapper">
-        <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox">
-          <label class="menu__btn" for="menu__toggle">
-            <span></span>
-          </label>
-          <div class="menu__box">
-            <div class="nav__menu-wrapper">
-              <ul>
-                <li><a class="menu__item" href="/seo">Продвижение</a></li>
-                <li><a class="menu__item" href="/razrabotka-sajtov">Разработка</a></li>
-                <li><a class="menu__item" href="/kontekstnaya-reklama">Реклама</a></li>
-                <li><a class="menu__item" href="/prodvizhenie-instagramm">Instagram</a></li>
-                <li><a class="menu__item" href="/audit">Аудит</a></li>
-              </ul>
-              <span class="city-top">
-                <span class="city-top-link" onclick="clickCite()">Омск</span>
-              </span>
-            </div>
-            <div class="mob-nav-contact__nav__wrapper">
-              <ul class="mob-nav-contact__nav">
-                <li class="mob-nav-contact__nav-item"><a href="/blog">Блог</a></li>
-                <li class="mob-nav-contact__nav-item"><a href="/obo-mne">Обо мне</a></li>
-                <li class="mob-nav-contact__nav-item"><a href="/kontaktyi">Контакты</a></li>
-              </ul>
-              <div class="mob-top-bar__call-back">
-                <a href="#popup" class="popup-link" onclick="ym(70966021,'reachGoal','orderHeader'); return true;">Заказать звонок</a>
+<body>
+  <header class="lock-padding top-bg-white">
+    <div class="mob-header">
+      <div class="container">
+        <div class="mob-menu__wrapper">
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <div class="menu__box">
+              <div class="nav__menu-wrapper">
+                <ul>
+                  <li><a class="menu__item" href="#">Главная</a></li>
+                  <li><a class="menu__item" href="#">Проекты</a></li>
+                  <li><a class="menu__item" href="#">Команда</a></li>
+                  <li><a class="menu__item" href="#">Блог</a></li>
+                  <li><a class="menu__item" href="#">Контакты</a></li>
+                </ul>
               </div>
-              <div class="menu__box__contact">
-                <a href="" class="menu__box-phone">
-                  +7 902 821 16 55
-                </a>
-                <span class="menu__box__info">
-                  Звоните с 8.00 до 21.00
-                </span>
-                <span class="menu__box__info">
-                  info@seo-dranitsyn.ru
-                </span>
-                <div class="top-bar__social">
-                  <a href="https://www.instagram.com/seo_dranitsyn/" target="_blank" rel="nofollow" class="inst">
-                    <i class="i-inst top-bar__ic-social"></i>
+              <div class="mob-nav-contact__nav__wrapper">
+                <ul class="mob-nav-contact__nav">
+                  <li class="mob-nav-contact__nav-item"><a href="">О нас</a></li>
+                  <li class="mob-nav-contact__nav-item"><a href="">Контакты</a></li>
+                </ul>
+                <div class="mob-top-bar__call-back">
+                  <a href="#popup" class="popup-link">Заказать звонок</a>
+                </div>
+                <div class="menu__box__contact">
+                  <a href="" class="menu__box-phone">
+                    +7 902 821 16 55
                   </a>
-                  <a href="https://vk.com/rdranitsyn" target="_blank" rel="nofollow" class="vk">
-                    <i class="i-vk top-bar__ic-social"></i>
-                  </a>
+                  <span class="menu__box__info">
+                    Звоните с 8.00 до 21.00
+                  </span>
+                  <span class="menu__box__info">
+                    mayya.gerliani@mail.ru
+                  </span>
+                  <div class="top-bar__social">
+                    <a href="" class="inst">
+                      <i class="i-inst top-bar__ic-social"></i>
+                    </a>
+                    <a href="" class="vk">
+                      <i class="i-vk top-bar__ic-social"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="mob-header__contact">
-          <div class="mob-header__contact-phone">
-            <i class="i-phone-mob mob-header-messages"></i>
-            <a href="tel:79028211655">+7 902 821 16 55</a>
-          </div>
-        </div>
-        <div class="mob-header__messages">
-          <a target="blank" rel="nofollow" href="https://wa.me/79028211655" onclick="ym(70966021,'reachGoal','clickWhatsapp'); return true;">
-              <i class="i-whatsapp-mob mob-header-messages"></i>
-          </a>
-          <a target="blank" rel="nofollow" href="https://t.me/rdranitsyn" onclick="ym(70966021,'reachGoal','clickTlg'); return true;">
-              <i class="i-telegram-mob mob-header-messages"></i>
-          </a>
-        </div>
-        <a href="/" class="logo-mob__wrapper">
-          <img src="assets/img/logo-mob.svg" alt="logo-mob">
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="top-bar">
-    <div class="container">
-      <div class="top-bar__wrapper">
-        <div class="top-bar__left-block">
-          <div class="top-bar__logo">
-              <a href="/">
-                  <img src="assets/img/logo.svg" alt="logo">
-              </a>
-          </div>
-          <div class="top-bar__phone">
-            <i class="i-phone top-bar__ic-messages"></i>
-            <a href="tel:79028211655">+7 902 821 16 55</a>
-          </div>
-          <div class="top-bar__messages">
-            <a target="blank" rel="nofollow" href="https://wa.me/79028211655" onclick="ym(70966021,'reachGoal','clickWhatsapp'); return true;">
-                <i class="i-whatsapp top-bar__ic-messages"></i>
-            </a>
-            <a target="blank" rel="nofollow" href="https://t.me/rdranitsyn" onclick="ym(70966021,'reachGoal','clickTlg'); return true;">
-                <i class="i-telegram top-bar__ic-messages"></i>
-            </a>
-          </div>
-          <div class="top-bar__call-back">
-            <a href="#popup" class="popup-link" onclick="ym(70966021,'reachGoal','orderHeader'); return true;">Заказать звонок</a>
-          </div>
-        </div>
-        <div class="top-bar__right-block">
-          <div class="top-bar__page-conctact">
-            <ul class="top-bar__nav-menu">
-              <li class="city-top">
-                <i></i>
-                <span class="city-top-link" onclick="clickCite()">Омск</span>
-              </li>
-              <li><a href="/obo-mne">Обо мне</a></li>
-              <li><a href="/kontaktyi">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="top-bar__social">
-            <a href="https://www.instagram.com/seo_dranitsyn/" target="_blank" rel="nofollow" class="inst">
-              <i class="i-inst top-bar__ic-social"></i>
-            </a>
-            <a href="https://vk.com/rdranitsyn" target="_blank" rel="nofollow" class="vk">
-              <i class="i-vk top-bar__ic-social"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="top-description">
-    <div class="container">
-      <div class="header-wrapper">
-        <div class="header-wrapper">
-<ul class="nav-header"><li class="menu-item"><a href="seo">Продвижение</a></li><li class="menu-item"><a href="razrabotka-sajtov">Создание</a></li><li class="menu-item"><a href="kontekstnaya-reklama">Реклама</a></li><li class="menu-item"><a href="prodvizhenie-instagramm">Instagram</a></li><li class="menu-item"><a href="audit">Аудит</a></li><li class="menu-item nav-item-lastClass"><a href="blog">Блог</a></li></ul>
-
-<ol itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb"><li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem" class="breadcrumb-item">
-      <a itemprop="item" href="/">
-        <span itemprop="name">Главная</span>
-        <meta itemprop="position" content="1">
-      </a>
-    </li>
-<li class="breadcrumb-item active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-      <span itemprop="name">Обо мне</span>
-      <meta itemprop="position" content="2">
-    </li></ol>
-</div>
-
-      </div>
-      <div class="top-description-block page-about-top">
-        <div class="top-description-wrapper top-description-wrapper__context page-about-top-left">
-          <h1>Обо мне</h1>
-          <p>
-              Занимаюсь Интернет-проектами с 2015 года
-          </p>
-          <p>
-              За это время поработал в разных ролях -веб-мастера, верстальщика, программиста, SEO-специалиста.
-          </p>
-          <p>
-              За время работы в компании в качестве seo-специалиста я поработал с большинством тематик сайтов. Перепробовал все возможные методы продвижения. Уверенно знаю, что влияет на ранжирование сайта больше и что меньше. Поэтому продвижение будет максимально быстрое и выгодное.
-          </p>
-        </div>
-        <div class="about-photo">
-            <img src="assets/img/photo-circle.png" alt="advertising" class="about-img">
-            <img src="assets/img/photo-circle2.png" alt="advertising" class="about-img2">
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-   <section class="description-page">
-  <div class="container">
-      <h2>Преимущества</h2>
-
-<h3><b>От фрилансеров меня отличает:</b></h3>
-
-<ul>
-<li>У меня есть своя небольшая команда. В качестве дизайнера и SMM-специалиста работает моя жена. У неё хороший опыт в разработке дизайн-макетов сайтов и дизайна социальных сетей (в основном инстаграма). По задачам программирования я обращаюсь к своим хорошим знакомым.</li>
-</ul>
-
-<h3><b>От компаний меня отличает:</b></h3>
-
-<ul>
-<li>
-<strong>Ответственность</strong>. Я не сотрудник и я не веду 20-30 проектов, что позволяет мне, погрузится в вашу тематику.
-</li>
-<li>
-<strong>Стоимость</strong>. Цена ниже, т.к.&nbsp;работая со мной вы платите напрямую мне.
-</li>
-<li>
-<strong>Качество</strong>. Цена продвижения ниже чем в компании, но и&nbsp;качество не хуже. Я уверен в своих знаниях, а работая с компанией результат продвижения будет зависеть от того, на сколько опытного специалиста поставят на ваш проект.&nbsp;
-</li>
-<li>
-<strong>Скорость выполнения</strong>. Общение напрямую со специалистом ускоряет работу и экономит бюджет.
-</li>
-</ul>
-
-<h2>Какие задачи я делегирую:</h2>
-
-<ol>
-<li>
-<strong>Задачи касающиеся программирования</strong>. И дело не в том, что я сам не могу это сделать. За несколько лет в данной сфере я научился решать 80% типовых задач, касающихся программирования. Но то, что я буду решать часами, у опытных программистов это занимает минуты.
-</li>
-<li>
-<strong>Задачи, касающиеся дизайна</strong>. Небольшие правки по дизайну можно сделать и без работы дизайнера, но зачастую лучше обратиться к опытному дизайнеру.
-</li>
-<li>
-<strong>Копирайтинг</strong>. Небольшие тексты, понятных тематик в силах написать сам, но объёмные задачи в сжатые сроки решить возможно только при поддержке. Именно поэтому мне помогает профессиональный копирайтер.
-</li>
-</ol>
-
-<h2>Что я делаю сам?</h2>
-
-<p>Самостоятельно я делаю все выше перечисленное, грамотное составление технических задач на делегирование, работы по seo, контроль процесса продвижения, стратегию продвижения.</p>
-
-  </div>
-</section>
-  <section class="about-certificates">
-  <div class="container">
-    <h2 class="subtitle">
-      Сертификаты
-    </h2>
-    <div class="about-certificates__wrapper">
-      <div class="about-certificates__item">
-        <a rel="nofollow" target="_blank" href="assets/materials/yandex-metric.pdf">
-          <img src="assets/img/metrika.jpg" alt="about-certificates">
-        </a>
-      </div>
-      <div class="about-certificates__item">
-        <a rel="nofollow" target="_blank" href="assets/materials/google-analytics.pdf">
-          <img src="assets/img/analitiks.jpg" alt="about-certificates">
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-  <section class="about-certificates">
-  <div class="container">
-    <h2 class="subtitle">
-      Отзывы
-    </h2>
-    <div class="slider">
-      <div class="slide">
-        <a rel="nofollow" style="background-image: url(img/tort-factory.jpg)" data-lightbox="roadtrip" href="img/tort-factory.jpg"></a>
-      </div>
-      <div class="slide">
-        <a rel="nofollow" style="background-image: url(img/tort-factory.jpg)" data-lightbox="roadtrip" href="img/tort-factory.jpg"></a>
-      </div>
-      <div class="slide">
-        <a rel="nofollow" style="background-image: url(img/test-slide.jpg)" data-lightbox="roadtrip" href="img/test-slide.jpg"></a>
-      </div>
-      <div class="slide">
-        <a rel="nofollow" style="background-image: url(img/tort-factory.jpg)" data-lightbox="roadtrip" href="img/tort-factory.jpg"></a>
-      </div>
-      
-    </div>
-  </div>
-</section>
-  
-  <footer>
-  <div class="container">
-    <div class="footer__wrapper">
-      <div class="footer__left footer__block">
-        <div class="footer__block__item footer__block__item-one">
-          <span class="footer__block__item-title">
-            Услуги
-          </span>
-          <ul class="footer__block__item__nav">
-            <li class="footer__block__item__nav">
-              <a href="/razrabotka-sajtov">
-                Создание сайтов
-              </a>
-            </li>
-            <li class="footer__block__item__nav">
-              <a href="/seo">
-                Продвижение сайтов
-              </a>
-            </li>
-            <li class="footer__block__item__nav">
-              <a href="/kontekstnaya-reklama">
-                Контекстная реклама
-              </a>
-            </li>
-            <li class="footer__block__item__nav">
-              <a href="/prodvizhenie-instagramm">
-                Продвижение instagram
-              </a>
-            </li>
-            <li class="footer__block__item__nav">
-              <a href="/audit">
-                Аудит
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__block__item">
-          <span class="footer__block__item-title">
-            Информация
-          </span>
-          <ul class="footer__block__item__nav">
-            <li class="footer__block__item__nav">
-              <a href="/blog">
-                Блог
-              </a>
-            </li>
-            <li class="footer__block__item__nav">
-              <a href="/obo-mne">
-                Обо мне
-              </a>
-            </li>
-            <li class="footer__block__item__nav">
-              <a href="/kontaktyi">
-                Контакты
-              </a>
-            </li>
-            <li class="footer__block__item__nav">
-              <a href="/karta-sajta">
-                Карта сайта
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__right footer__block">
-        <div class="footer__block__item">
-          <span class="footer__block__item-title footer__block__item-title-contact">
-            Контакты
-          </span>
-          <div class="footer-info">
-            <div class="footer-info__icon">
-              <img src="assets/img/call-footer.png" alt="call">
-            </div>
-            <div class="footer-info__link">
+          <div class="mob-header__contact">
+            <div class="mob-header__contact-phone">
+              <i class="i-phone-mob mob-header-messages"></i>
               <a href="tel:79028211655">+7 902 821 16 55</a>
             </div>
           </div>
-          <div class="footer-info">
-            <div class="footer-info__icon">
-              <img src="assets/img/message-footer.png" alt="message">
+          <div class="mob-header__messages">
+            <i class="i-whatsapp-mob mob-header-messages"></i>
+            <i class="i-telegram-mob mob-header-messages"></i>
+            <i class="i-viber-mob mob-header-messages"></i>
+          </div>
+          <a href="/" class="logo-mob__wrapper">
+            <img src="img/logo-mob.svg" alt="logo">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar__wrapper">
+          <div class="top-bar__left-block">
+            <div class="top-bar__logo">
+              <img src="img/logo.svg" alt="logo">
             </div>
-            <div class="footer-info__link">
-              <a href="mailto:info@seo-dranitsyn.ru">info@seo-dranitsyn.ru</a>
+            <div class="top-bar__phone">
+              <i class="i-phone top-bar__ic-messages"></i>
+              <a href="tel:79028211655">+7 902 821 16 55</a>
+            </div>
+            <div class="top-bar__messages">
+              <i class="i-whatsapp top-bar__ic-messages"></i>
+              <i class="i-telegram top-bar__ic-messages"></i>
+              <i class="i-viber top-bar__ic-messages"></i>
+            </div>
+            <div class="top-bar__call-back">
+              <a href="#popup" class="popup-link">Заказать звонок</a>
             </div>
           </div>
-          <div class="footer-info">
-            <div class="footer-info__icon">
-              <img src="assets/img/vk-footer.png" alt="vk">
+          <div class="top-bar__right-block">
+            <div class="top-bar__page-conctact">
+              <ul class="top-bar__nav-menu">
+                <li><a href="">О нас</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
             </div>
-            <div class="footer-info__link">
-              <a href="https://vk.com/rdranitsyn" target="_blank" rel="nofollow">Я в контакте</a>
+            <div class="top-bar__social">
+              <a href="" class="inst">
+                <i class="i-inst top-bar__ic-social"></i>
+              </a>
+              <a href="" class="vk">
+                <i class="i-vk top-bar__ic-social"></i>
+              </a>
             </div>
-          </div>
-          <div class="footer-info">
-            <div class="footer-info__icon">
-              <img src="assets/img/instagram-footer.png" alt="instagram">
-            </div>
-            <div class="footer-info__link">
-            <a href="https://www.instagram.com/seo_dranitsyn/" target="_blank" rel="nofollow">instagram.com</a>
-            </div>
-          </div>
-          <div class="footer-info-order">
-            <a href="#popup" class="popup-link with-us__popup-order btn-gold" onclick="ym(70966021,'reachGoal','orderFooter'); return true;">Отправить заявку</a>
           </div>
         </div>
       </div>
     </div>
-    <span class="copyright">Создание и продвижение сайтов в Омске. <br>
-      © 2021 Частный сео-специалист Рустам Драницын. 
-    </span>
-  </div>
-</footer>
-  <div id="popup" class="popup">
-  <div class="popup__body">
-    <div class="popup__content">
-      <a href="" class="popup__close close-popup"><i></i></a>
-      <div class="popup__title">Отправить заявку</div>
-      
+    <div class="top-description">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="container">
+            <ul class="nav-header">
+              <li><a href="">Продвижение</a></li>
+              <li><a href="">Продвижение</a></li>
+              <li><a href="">Продвижение</a></li>
+              <li><a href="">Продвижение</a></li>
+              <li><a href="">Продвижение</a></li>
+              <li><a href="">Продвижение</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="top-description-block">
+          <div class="top-description-wrapper top-description-wrapper__context">
+            <h1>Продвижение сайтов</h1>
+            <p>Результат поискового продвижения сайта - это всегда привлечение большего числа целевых посетителей на ваш
+              сайт.
+              Это происходит за счет повышения позиций сайта по продвигаемым запросам и роста переходов по этим запросам
+              с
+              систем Яндекс и Google.
+            </p>
+            <div class="top-order">
+              <a href="#popup" class="popup-link popup-order btn-black">Заказать продвижение сайта</a>
+            </div>
+          </div>
+          <img src="img/advertising.svg" alt="advertising" class="top-advertising">
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="advantages-context">
+    <div class="container">
+      <h2 class="subtitle">
+        Для чего нужно продвижение?
+      </h2>
+      <p>
+        В условиях жесткой конкуренции и повсеместного распространения информационных технологий бизнес обязан
+        переводить часть своих ресурсов (или даже переходить полностью) в сеть Интернет.
+      </p>
+      <p>
+        Чтобы получить некоторое конкурентное преимущество, необходимо организовать грамотный и полноценный маркетинг.
+        Для «всемирной паутины» в ракурсе отечественного сегмента оптимальным решением данной задачи является раскрутка
+        сайта в Яндекс.Директ. Эта поисковая система пользуется большой популярностью и считается самой востребованной
+        (наравне с Google) среди жителей региона.
+      </p>
+      <p>
+        Существуют разные маркетинговые инструменты, позволяющие повысить посещаемость конкретного сайта. Однако реклама
+        в поисковой системе выглядит привлекательно с практической точки зрения по следующим причинам:
+      </p>
+      <ul>
+        <li>объективно высокий результат при минимальных затратах времени;</li>
+        <li>экономия денег, услуги Яндекс.Директа позволяют экономить до половины выделенных средств;</li>
+        <li>сам заказчик имеет возможность контролировать процесс, получает наглядную, концентрированную информацию в
+          цифровом и графическом формате.</li>
+      </ul>
+    </div>
+  </section>
+  <section style="margin-top: 80px;" class="options-context">
+    <div class="container">
+      <h2 class="subtitle">
+        <span style="color: #F4B92F;">Стоимость</span> настройки и ведения<br> контекстной рекламы
+      </h2>
+      <div class="context-price">
+        <div class="context-price__item">
+          <div class="context-price__item__wrapper">
+            <div class="context-price__item-title">
+              YANDEX DIRECT
+            </div>
+            <div class="context-price__item-description">
+              <ul>
+                <li>
+                  2 канала рекламы: Поиск и РСЯ
+                </li>
+                <li>
+                  Ведение: 5 000 в месяц
+                </li>
+                <li>
+                  Разработка семантического ядра и его
+                  кластеризация<br>
+                  Разработка офферов для разных
+                  сегментов аудитории<br>
+                  Создание мобильных объявлений и
+                  объявлений для десктопа
+                </li>
+              </ul>
+            </div>
+            <div class="context-price__item-price">
+              10 000 р
+            </div>
+            <span class="context__item__order">
+              <a href="#popup" class="popup-link">Заказать</a>
+            </span>
+          </div>
+        </div>
+        <div class="context-price__item">
+          <div class="context-price__item__wrapper">
+            <div class="context-price__item-title">
+              YANDEX И GOOGLE
+            </div>
+            <div class="context-price__item-description">
+              <ul>
+                <li>
+                  4 канала рекламы: Поиск, РСЯ и КМС
+                </li>
+                <li>
+                  Ведение: 10 000 в месяц
+                </li>
+                <li>
+                  Разработка семантического ядра и его
+                  кластеризация<br>
+                  Разработка офферов для разных
+                  сегментов аудитории<br>
+                  Создание мобильных объявлений и
+                  объявлений для десктопа
+                </li>
+              </ul>
+            </div>
+            <div class="context-price__item-price">
+              20 000 р
+            </div>
+            <span class="context__item__order">
+              <a href="#popup" class="popup-link">Заказать</a>
+            </span>
+          </div>
+        </div>
+        <div class="context-price__item">
+          <div class="context-price__item__wrapper">
+            <div class="context-price__item-title">
+              GOOGLE ADWORDS
+            </div>
+            <div class="context-price__item-description">
+              <ul>
+                <li>
+                  2 канала рекламы: Поиск и КМС
+                </li>
+                <li>
+                  Ведение: 5 000 в месяц
+                </li>
+                <li>
+                  Разработка семантического ядра и его
+                  кластеризация<br>
+                  Разработка офферов для разных
+                  сегментов аудитории<br>
+                  Создание мобильных объявлений и
+                  объявлений для десктопа
+                </li>
+              </ul>
+            </div>
+            <div class="context-price__item-price">
+              10 000 р
+            </div>
+            <span class="context__item__order">
+              <a href="#popup" class="popup-link">Заказать</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="step-direct">
+    <div class="container">
+      <p>В условиях жесткой конкуренции и повсеместного распространения информационных технологий бизнес обязан
+        переводить часть своих ресурсов (или даже переходить полностью) в сеть Интернет.</p>
+
+      <p>Чтобы получить некоторое конкурентное преимущество, необходимо организовать грамотный и полноценный маркетинг.
+        Для «всемирной паутины» в ракурсе отечественного сегмента оптимальным решением данной задачи является раскрутка
+        сайта в Яндекс.Директ. Эта поисковая система пользуется большой популярностью и считается самой востребованной
+        (наравне с Google) среди жителей региона.</p>
+
+      <h2 class="subtitle">Этапы настройки</h2>
+
+      <p>В каждом конкретном случае алгоритм действий специалиста сугубо индивидуален. Однако стандартную
+        последовательность мероприятий в утрированном формате при продвижении сайтов в Директ можно выделить.</p>
 
 
+      <div class="step-direct__row">
+        <div class="step-direct__row-description">
+          <h3>1. Анализ вашего проекта и порталов конкурентов</h3>
+          <p>Аудит объекта – важная составляющая подготовительного процесса. Если ресурс в полной мере соответствует
+            бизнес-задачам, что на практике случается крайне редко, то можно переходить к следующему шагу. В остальных
+            случаях определяется стратегии адаптации под работу в коммерческом направлении: полнота представления
+            информации, эстетические и эргономические параметры, валидность контента и так далее.</p>
+        </div>
+        <div class="step-direct__row-img">
+          <img src="img/analiz-direct.png" alt="Анализ проекта">
+        </div>
 
-<form action="obo-mne" method="post" class="form popup__test">
+      </div>
 
-  <input type="hidden" name="nospam:blank" value="">
+      <div class="step-direct__row">
+        <div class="step-direct__row-img">
+          <img src="img/mask-direct.png" alt="Сбор базовых масок">
+        </div>
 
-  <label for="name" class="input">
-      <input class="popup__body-input field" type="text" name="name" id="name" value="" placeholder="Ваше имя" required="">
-      <i class="icon-user icon-popup"></i>
-  </label>
-  
-  <label for="phone" class="input">
-      <input class="popup__body-input field" type="text" name="phone" id="phone" value="" placeholder="Телефон" required="">
-      <i class="icon-phone icon-popup"></i>
-  </label>
-  
+        <div class="step-direct__row-description">
+          <h3>2. Сбор базовых масок</h3>
 
-  
-  <label for="text" class="textarea">
-      <i class="icon-comment icon-popup"></i>
-      <textarea name="text" id="text" cols="55" rows="7" placeholder="Ваше сообщение"></textarea>
-  </label>
-        
-  <button name="submit" class="button btn-success btn-success" type="submit">Отправить</button>
-  <span class="description-popup">
-      Нажимая кнопку "Отправить" я даю <a rel="nofollow" target="_blank" href="/politika">согласие</a> на обработку персональных данных.
-  </span>
-  
-  <span class="error_g-recaptcha-response error error_message"></span>
-  <input type="hidden" name="g-recaptcha-response" value="03AGdBq2590TZDkzMtkFddLLuLrIH6204ZQ70KUqyBzgUCY5I61K3BPFimEZWjTrAzz_vsU7wgAPgvhaPeOIEl_FCwioAhdF1r6GTzFxi4SxmuQQr4hvLjPEXs17JnZ1oZg86b7DI0Vthc7HWM1xEv9_yhC9eJrHVBzR-01orahXSqtc71U7hoLf6pi3RdyfHcyYqRbWX52eEXv0TFmVMYMNyyE04XRO9clTV6t2UTi13Z1wF_j-HKSN8nDvgwU_J3-MPMMAhiASezljaoAwbBB9fpE7cdc7NDfJFbGPFCZgOxL3iUCgRh8G3Ak8J7d8-JO6oqd6UDqslIgfMpeMTAtyd4aELJAaDiCs8RS41t5vn6I5YLF5PSl8rV86TMmhUZREZIohPJ_RK2S1PLaMMcre7ZGFA8KKw7QkVGz91-XlttqOfZ-rrXaR9ELUAIxdbXpxgnlTrWybng">
+          <p>Речь идет о подборе и систематизации определенных меток – фраз, выражений, по которым потенциальный
+            потребитель
+            ищет ваш товар в сети Интернет. Для этих целей используются различные инструменты, в том числе и анализ
+            сайтов
+            конкурентов. После того, как я подготовлю данный материал, можно переходить к следующему уровню.</p>
+        </div>
+      </div>
+      <div class="step-direct__row">
+        <div class="step-direct__row-description">
+          <h3>3. Парсинг семантики</h3>
 
-</form>
+          <p>Данный шаг подразумевает фильтрацию собранных базовых масок по определенных критериям. В частности, среди
+            вариантов поисковых запросов присутствуют информационные и познавательные фразы/слова, не несущие
+            коммерческую
+            нагрузку. Они хороши для тех, кто просто «гуляет по просторам сети», собирая интересную и полезную
+            информацию,
+            но мы то должны продать товары и услуги.</p>
+
+          <p>В результате я получаю ограниченное, рабочее число фраз или отдельных слов, с которыми можно переходить уже
+            к
+            следующему шагу.</p>
+        </div>
+        <div class="step-direct__row-img">
+          <img src="img/parsing-direct.png" alt="">
+        </div>
+
+      </div>
+
+      <div class="step-direct__row">
+        <div class="step-direct__row-img">
+          <img src="img/semantica-direct.png" alt="">
+        </div>
+
+        <div class="step-direct__row-description">
+          <h3>4. Чистка семантики, сбор минус-фраз</h3>
+
+          <p>В моем понимании речь идет о плавном продолжении предыдущего этапа. Продвижение сайта в Яндекс.Директ
+            осуществляется по точно определенному перечню запросов. По этой причине для повышения эффективности я удаляю
+            из
+            семантического ядра сформированный список нежелательных ключей. Это позволит ни распылять рекламу по
+            широкому
+            кругу не всегда заинтересованных пользователей, а сконцентрировать ее на целевой аудитории.</p>
+        </div>
+      </div>
+
+      <div class="step-direct__row">
+        <div class="step-direct__row-description">
+          <h3>5. Пишем цепляющие объявления</h3>
+
+          <p>Заголовок – основа успешной продажи. Он должен быть не только интригующим, вызывающим желание кликнуть, но
+            и
+            СЕО-оптимизированным, то есть содержать ключевую фразу или слово. Сам текст также должен быть релевантным,
+            соответствовать деятельности компании и продаваемым товарам.</p>
+
+          <p>В сетях применяется баннерная реклама. Сами баннеры заказчик может предоставить самостоятельно либо я их
+            выполню в качестве дополнительной услуги.</p>
+        </div>
+        <div class="step-direct__row-img">
+          <img src="img/offer-direct.png" alt="">
+        </div>
+
+      </div>
+
+      <div class="step-direct__row">
+        <div class="step-direct__row-img">
+          <img src="img/poisk-minus-direct.png" alt="">
+        </div>
+
+        <div class="step-direct__row-description">
+          <h3>6. Настраиваем проект для поиска и РСЯ</h3>
+
+          <p>Здесь самое главное для меня заключается в том, чтобы однозначно разделить семантику, ориентированную на
+            рекламную компанию и РСЯ. Необходимо четко понимать, что алгоритмы работы поисковых машин и рекламы в сетях
+            Яндекса отличаются, поэтому требуют индивидуального подхода.</p>
+        </div>
+      </div>
+
+      <div class="step-direct__row">
+        <div class="step-direct__row-description">
+          <h3>7. Перенастраиваем проект</h3>
+
+          <p>Настройка рекламной компании в Яндекс.Директ включает следующие обязательные моменты:</p>
+
+          <ul>
+            <li>заполнение всех подпунктов, имеющихся в объявлении;</li>
+            <li>оформление визитки;</li>
+            <li>указание основной и быстрых ссылок;</li>
+            <li>формирование настраиваемых параметров: географический и временной таргетинг, минус-фразы, счетчик
+              Метрики и
+              другие аспекты.</li>
+          </ul>
+
+          <p>Важно адреса пишем с UTM-метками, чтобы обеспечить интеграцию с аналитикой.</p>
+        </div>
+        <div class="step-direct__row-img">
+          <img src="img/perenastroyka-direct.png" alt="">
+        </div>
+
+      </div>
+
+      <div class="step-direct__row">
+        <div class="step-direct__row-img">
+          <img src="img/tseli-direct.png" alt="">
+        </div>
+
+        <div class="step-direct__row-description">
+          <h3>8. Проверка, настройка целей</h3>
+
+          <p>До начала использования объявления необходимо проследить, чтобы в Метрике отображались интересующие нас
+            сведения, как вариант, по звонкам, заявкам, переходам и т.д.</p>
+
+        </div>
+      </div>
+
+      <div class="step-direct__row">
+        <div class="step-direct__row-description">
+          <h3>9. Запуск и бесплатное ведение в течение первой недели</h3>
+
+          <p>После пуска проекта в работу, как минимум, на начальном этапе важно отслеживать эффективность с целью
+            внесения возможных корректировок. На протяжении семи дней я буду делать это совершенно без оплаты. Обычно
+            этого времени достаточно для получения объективной информации. При желании заказчика, в качестве
+            дополнительного пункта срок наблюдения может быть увеличен.
+
+          </p>
+        </div>
+        <div class="step-direct__row-img">
+          <img src="img/vedenie-direct.png" alt="">
+        </div>
+
+      </div>
+
     </div>
   </div>
-</div>
-<div class="back_to_top" id="toTop" onclick="topFunction()">
-  <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="25" cy="25" r="25" fill="#FFA800"></circle>
-    <path d="M31.8468 20.9378L25.8213 14.883L25.8202 14.882C25.3672 14.4282 24.6312 14.4297 24.1797 14.8821L24.1786 14.8832L18.1531 20.9379C17.7017 21.3915 17.7034 22.1252 18.157 22.5767C18.6106 23.0281 19.3443 23.0264 19.7957 22.5728L23.8412 18.5076V34.2989C23.8412 34.9389 24.36 35.4577 24.9999 35.4577C25.6399 35.4577 26.1587 34.9389 26.1587 34.2989V18.5076L30.2041 22.5727C30.6556 23.0262 31.3892 23.028 31.8428 22.5765C32.2966 22.125 32.2981 21.3913 31.8468 20.9378Z" fill="white"></path>
-  </svg>
-</div>
 
-<div id="city-selector-modal">
-  <div id="city-selector-list" role="dialog">
-    <!--noindex-->
-<div class="modal fade" id="Cities" role="dialog">
-  <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-              <span class="city-selector-modal-close"><i></i></span>
-              <span class="city-selector-list-title">Выберите город</span>
-          </div>
-          <div class="modal-body">
-              <div>
-                  <input type="text" onkeyup="searchSite()" placeholder="Поиск по городу" class="form-control sd-city-input">
-              </div>
-              <br>
-              <ul class="sd-city-items">
-                                          <li class="sd-city-item">
-                          <a href="//abakan.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Абакан</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//anadyr.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Анадыр</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//arkhangelsk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Архангельск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//astrakhan.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Астрахан</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//barnaul.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Барнаул</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//belgorod.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Белгород</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//berdsk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Бердск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//birobidzhan.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Биробиджан</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//blagoveshchensk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Благовещенск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//bryansk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Брянск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//vnovgorod.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Великий Новгород</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//vladivostok.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Владивосток</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//vladikavkaz.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Владикавказ</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//vladimir.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Владимир</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//volgograd.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Волгоград</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//vologda.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Вологда</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//voronezh.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Воронеж</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//gornoaltaysk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Горно-Алтайск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//grozny.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Грозный</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//ekaterinburg.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Екатеринбург</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//ivanovo.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Иваново</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//izh.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Ижевск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//irkutsk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Иркутск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//yoshkarola.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Йошкар-Ола</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//kazan.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Казань</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//kaliningrad.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Калининград</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//kaluga.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Калуга</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//kemerovo.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Кемерово</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//kirov.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Киров</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//kostroma.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Кострома</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//krasnodar.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Краснодар</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//krasnoyarsk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Красноярск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//kurgan.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Курган</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//kursk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Курск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//kyzyl.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Кызыл</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//lipetsk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Липецк</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//magadan.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Магадан</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//magas.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Магас</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//maikop.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Майкоп</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//mkala.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Махачкала</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//moscow.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Москва</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//murmansk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Мурманск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//nalchik.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Нальчик</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//nmar.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Нарьян-Мар</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//nn.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Нижний Новгород</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//novokuznetsk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Новокузнецк</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//novosibirsk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Новосибирск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//seo-dranitsyn.ru/obo-mne" rel="nofollow" class="active">Омск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//orel.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Орел</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//orenburg.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Оренбург</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//penza.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Пенза</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//perm.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Пермь</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//petrozavodsk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Петрозаводск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//pkam.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Петропавловск-Камчатский</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//pskov.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Псков</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//rostov.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Ростов-на-Дону</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//ryazan.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Рязань</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//salekhard.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Салехард</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//samara.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Самара</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//spb.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Санкт-Петербург</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//saransk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Саранск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//saratov.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Саратов</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//sevastopol.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Севастополь</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//simferopol.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Симферополь</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//smolensk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Смоленск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//sochi.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Сочи</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//stavropol.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Ставрополь</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//surgut.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Сургут</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//syktyvkar.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Сыктывкар</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//tambov.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Тамбов</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//tver.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Тверь</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//tomsk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Томск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//tula.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Тула</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//tumen.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Тюмень</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//ulanude.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Улан-Удэ</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//ulyanovsk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Ульяновск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//ufa.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Уфа</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//khabarovsk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Хабаровск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//hmansy.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Ханты-Мансийск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//cheboksary.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Чебоксары</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//chelyabinsk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Челябинск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//cherkessk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Черкесск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//chita.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Чита</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//elista.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Элиста</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//sakhalin.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Южно-Сахалинск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//yakutsk.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Якутск</a>
-                      </li>
-                                          <li class="sd-city-item">
-                          <a href="//yaroslavl.seo-dranitsyn.ru/obo-mne" rel="nofollow" class="">Ярославль</a>
-                      </li>
-                                  </ul>
-          </div>
+  <div class="price-direct">
+    <div class="container">
+      <h2 class="subtitle">Затраты на продвижение сайта</h2>
+
+      <p>В каждом конкретном случае сложность и затратность работ будет отличаться. Это во многом зависит от специфики
+        бизнеса. Высокая конкуренция в сегменте рынка заказчика увеличивает стоимость.</p>
+
+      <p><b>В конечном счете, цена на услуги контекстной рекламы в Яндекс зависит от следующих факторов:</b></p>
+
+      <ul>
+        <li>Уровень конкуренции.</li>
+        <li>Численность проводимых рекламных компаний, а их количество – от установленных ключевых запросов.</li>
+        <li>Наличие дополнительных предложений.</li>
+        <li>Цены на один клик и, соответственно, требований клиента в отношении их количества.</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="popup" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="" class="popup__close close-popup"><i></i></a>
+        <div class="popup__title">Отправить заявку</div>
+        <div class="popup__test">
+          <label class="input">
+            <i class="icon-user icon-popup"></i>
+            <input class="popup__body-input" type="text" name="name" placeholder="Ваше имя">
+          </label>
+          <label class="input">
+            <i class="icon-phone icon-popup"></i>
+            <input class="popup__body-input" type="text" name="phone" placeholder="Телефон">
+          </label>
+          <label class="textarea">
+            <i class="icon-comment icon-popup"></i>
+            <textarea rows="3" name="comment" placeholder="Ваше сообщение"></textarea>
+          </label>
+          <button type="submit" class="button btn-success">Отправить</button>
+          <span class="description-popup">
+            Нажимая кнопку "Отправить" я даю согласие на обработку персональных данных.
+          </span>
+        </div>
       </div>
+    </div>
   </div>
-</div>
-<!--/noindex-->
+
+  <div id="goTopButton" onclick="topFunction()" style="display: block;">
+    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="25" cy="25" r="25" fill="#FFA800"></circle>
+      <path
+        d="M31.8468 20.9378L25.8213 14.883L25.8202 14.882C25.3672 14.4282 24.6312 14.4297 24.1797 14.8821L24.1786 14.8832L18.1531 20.9379C17.7017 21.3915 17.7034 22.1252 18.157 22.5767C18.6106 23.0281 19.3443 23.0264 19.7957 22.5728L23.8412 18.5076V34.2989C23.8412 34.9389 24.36 35.4577 24.9999 35.4577C25.6399 35.4577 26.1587 34.9389 26.1587 34.2989V18.5076L30.2041 22.5727C30.6556 23.0262 31.3892 23.028 31.8428 22.5765C32.2966 22.125 32.2981 21.3913 31.8468 20.9378Z"
+        fill="white"></path>
+    </svg>
   </div>
-</div>
-<script src="assets/js/main.js"></script>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
- (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
- m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
- (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
- ym(70966021, "init", {
-      clickmap:true,
-      trackLinks:true,
-      accurateTrackBounce:true,
-      webvisor:true
- });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/70966021" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-W4PS3P0MCT"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-W4PS3P0MCT');
-</script>
-
-      <script>
-          var ReCaptchaCallbackV3 = function() {
-              grecaptcha.ready(function() {
-                  grecaptcha.reset = grecaptchaExecute;
-                  grecaptcha.reset();
-              });
-          };
-          function grecaptchaExecute() {
-              grecaptcha.execute("6Lc3HyUaAAAAAFm7oHkf-P74jDkYGYekoyxfHkyB", { action: "ajaxform" }).then(function(token) {
-                  var fieldsToken = document.querySelectorAll("[name ='g-recaptcha-response']");
-                  Array.prototype.forEach.call(fieldsToken, function(el, i){
-                      el.value = token;
-                  });
-              });
-          };
-          // обновляем капчу каждую минуту
-          setInterval(function() {
-              grecaptcha.reset();
-          }, 60000);
-      </script>
-      
-<link rel="stylesheet" href="css/lightbox.min.css">
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
-<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
-<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script type="text/javascript" src="js/slick.js"></script>
-<script type="text/javascript" src="js/lightbox.min.js"></script>
-<style>
-  .slick-prev, .slick-next {
-    z-index: 999;
-  }
-  .slick-next:before, .slick-prev:before {
-    color: #202020;
-    font-size: 32px;
-  }
-</style>
-
-
-
-<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lc3HyUaAAAAAFm7oHkf-P74jDkYGYekoyxfHkyB&amp;co=aHR0cHM6Ly9zZW8tZHJhbml0c3luLnJ1OjQ0Mw..&amp;hl=ru&amp;v=6g5J7UfDQ9mLrweZHj04ekSP&amp;size=invisible&amp;cb=ssg3lrm4793o" width="256" height="60" role="presentation" name="a-t5z3rpnpmd6q" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div></body>
+  <script src="js/main.js"></script>
+</body>
 
 </html>
