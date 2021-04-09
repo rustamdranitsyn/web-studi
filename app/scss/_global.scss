@@ -16,7 +16,7 @@ body {
     color: #202020;
 }
 
- a{
+a {
     display: inline-block;
     text-decoration: none;
     color: #202020;
@@ -36,7 +36,7 @@ li {
         color: #000;
         padding-left: 10px;
         span {
-        padding-left: 10px;
+            padding-left: 10px;
         }
         &:first-child {
             padding: 0;
@@ -54,9 +54,11 @@ button {
 button:hover {
     cursor: pointer;
 }
+
 a:hover {
     cursor: pointer;
 }
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -69,10 +71,12 @@ a:hover {
     line-height: 47px;
     color: #202020;
 }
+
 .h2-bold {
     font-weight: bold;
     font-size: 25px;
 }
+
 .no-marker li {
     background-repeat: no-repeat;
     padding-left: 0;
@@ -96,14 +100,14 @@ a:hover {
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    color: #FFFFFF;
+    color: #ffffff;
     background: #202020;
     border-radius: 50px;
-    transition: all ease .15s;
+    transition: all ease 0.15s;
 }
 
 .btn-black:hover {
-    background:#202015;
+    background: #202015;
 }
 
 .btn-gold {
@@ -116,27 +120,25 @@ a:hover {
     color: #202020;
     border-radius: 50px;
     border: none;
-    transition: all ease .15s;
+    transition: all ease 0.15s;
 }
 
 .btn-gold:hover {
-    background: #FCC954;
+    background: #fcc954;
 }
 
 .works-list-open {
     position: relative;
-
     ul {
         padding-top: 15px;
         padding-left: 25px;
-
         li {
             display: flex;
             font-size: 15px;
             line-height: 18px;
             color: #000000;
             &::before {
-                content: '';
+                content: "";
                 width: 15px;
                 height: 20px;
                 margin-top: 0px;
@@ -146,7 +148,6 @@ a:hover {
             }
         }
     }
-
     .works-list-open-bg {
         height: 100%;
         width: 100%;
@@ -154,7 +155,6 @@ a:hover {
         background: rgba(226, 226, 226, 0.3);
         opacity: 0.5;
     }
-
 }
 
 .bg {
@@ -164,12 +164,13 @@ a:hover {
     width: 100%;
     background: rgba(255, 255, 255, 1);
     opacity: 0.5;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
 }
+
 .breadcrumb {
     display: flex;
     padding-left: 0;
-    li {  
+    li {
         a {
             color: #000;
             transition: 0.3ms;
