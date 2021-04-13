@@ -271,6 +271,12 @@
     .services-insta_item {
         width: 200px;
     }
+    .blog-wrapper {
+        .preview-case {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
 }
 @media all and (max-width: 768px) {
     .item-head {
@@ -479,8 +485,9 @@
     .faq_item_title_inner-seo {
         font-size: 21px;
     }
-    .services-insta__wrapper {
-        
+    .blog-post__wrapper {
+        .preview-case__img {
+            height: 210px;
+        }
     }
-    
 }
