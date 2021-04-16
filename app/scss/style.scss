@@ -3060,5 +3060,18 @@ footer {
     height: 364px;
     object-fit: cover;
 }
-
+.case-content {
+    ul {
+        padding: 0 0 0 20px;
+        li {
+            list-style: disc;
+        }
+    }
+    ol {
+        padding: 0 0 0 20px; 
+        li {
+            list-style: unset;
+        } 
+    }
+}
 //конец кейсов
