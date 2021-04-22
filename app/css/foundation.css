@@ -72,7 +72,7 @@ img {
 .antialiased {
   -webkit-font-smoothing: antialiased; }
 
-img {
+.twentytwenty-container img {
   display: inline-block;
   vertical-align: middle; 
   }
