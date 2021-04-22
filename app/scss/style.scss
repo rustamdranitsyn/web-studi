@@ -27,6 +27,7 @@ header {
     background: #171717;
     a {
         color: #fff;
+        text-decoration: none;
     }
 }
 
@@ -136,12 +137,12 @@ td {
         margin-left: 28px;
         font-size: 20px;
         line-height: 23px;
-        color: #202020;
         &:first-child {
             margin: 0;
             padding-left: 0;
         }
         a {
+            color: #202020;
             display: inline-block;
             line-height: 1;
             text-decoration: none;
@@ -267,6 +268,9 @@ td {
     width: 100%;
     z-index: 1000;
     background: #f5f2f2;
+    a {
+        color: #202020;
+    }
 }
 
 .mob-header-messages {
@@ -633,7 +637,7 @@ td {
 
 .services-item__content {
     margin-left: 35px;
-    a {
+    .title-home {
         font-weight: bold;
         font-size: 30px;
         line-height: 29px;
@@ -703,6 +707,10 @@ td {
 .top-description-block {
     display: flex;
     justify-content: space-between;
+    h1 {
+        line-height: 49px;
+        font-size: 42px
+    }
 }
 
 .top-description-wrapper__context {
@@ -811,6 +819,7 @@ td {
         line-height: 21px;
         color: #202020;
         transition: all ease 0.15s;
+        text-decoration: none;
     }
     a:hover {
         background: #fcc954;
@@ -1291,7 +1300,26 @@ td {
 .insta-abaout .telegram-inst {
     background: url(/assets/img/telegram-inst.png) no-repeat top left;
 }
-
+.list-case {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item-case {
+    max-width: 360px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.item-case:hover {
+    text-decoration: none!important;
+}
+.item-case__title {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #202020;
+}
 .question-smm {
     padding: 60px 0 100px 0;
     .question-smm__item {
@@ -1310,7 +1338,7 @@ td {
 }
 
 .services-insta__wrapper {
-    padding: 30px 0 45px;
+    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -1402,6 +1430,7 @@ td {
                 color: #202020;
                 padding: 10px 65px;
                 transition: all ease 0.15s;
+                text-decoration: none;
             }
             .btn-developer:hover {
                 background: #fcc954;
@@ -1742,7 +1771,7 @@ td {
 }
 
 .top-description-wrapper__site-card {
-    padding: 100px 0 50px 0;
+    padding: 50px 0 50px 0;
     .top-description-wrapper__site-card_top {
         display: flex;
         justify-content: space-between;
@@ -1775,6 +1804,9 @@ td {
                 padding: 30px 0 15px 0;
                 display: flex;
                 flex-direction: column;
+                a {
+                    color: #202020;
+                }
                 .top-card-order__item-title {
                     font-weight: bold;
                     font-size: 25px;
@@ -1934,6 +1966,7 @@ td {
         line-height: 21px;
         color: #202020;
         transition: all ease 0.15s;
+        text-decoration: none;
     }
     a:hover {
         background: #fcc954;
@@ -1989,7 +2022,11 @@ td {
         }
     }
 }
-
+.site-html {
+    a {
+        color: #202020;
+    }
+}
 #toTop {
     z-index: 9999;
     display: inline-block;
@@ -2756,6 +2793,9 @@ footer {
     column-count: 4;
     margin: 0 auto;
     display: block;
+    a {
+        text-decoration: none;
+    }
 }
 
 .sd-city-item {
@@ -2812,16 +2852,15 @@ footer {
 .blog-post:hover {
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.35);
 }
-
-.blog-content {
-    .blog-post__title a {
-        transition: 0.5s;
-        color: #202020;
-        &:hover {
-            color: #777;
-            text-decoration: none;
-        }
+.blog-post__title a {
+    transition: 0.5s;
+    color: #202020;
+    &:hover {
+        color: #777;
+        text-decoration: none;
     }
+}
+.blog-content {
     p {
         margin: 0 0 15px 0;
     }
@@ -2837,12 +2876,6 @@ footer {
     ol {
         li {
             list-style: decimal;
-        }
-    }
-    a {
-        color: #FFA800;
-        &:hover {
-            text-decoration: underline;
         }
     }
 }
@@ -3055,12 +3088,16 @@ footer {
     max-width: 45.333333%;
     transition: 0.5s;
 }
+.preview-case:hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.35);
+}
 .preview-case__img {
     width: 100%;
     height: 364px;
     object-fit: cover;
 }
 .case-content {
+    margin-bottom: 100px;
     ul {
         padding: 0 0 0 20px;
         li {
@@ -3075,3 +3112,7 @@ footer {
     }
 }
 //конец кейсов
+
+// начало блока до-после
+
+// конец блока до-после
