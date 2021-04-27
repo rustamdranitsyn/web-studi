@@ -126,6 +126,7 @@ td {
     border-radius: 50px;
     a {
         padding: 14px 22px;
+        user-select: none;
     }
 }
 
@@ -820,6 +821,7 @@ td {
         color: #202020;
         transition: all ease 0.15s;
         text-decoration: none;
+        user-select: none;
     }
     a:hover {
         background: #fcc954;
@@ -1058,6 +1060,7 @@ td {
         color: #ffffff;
         background: #3a3838;
         border-radius: 10px;
+        user-select: none;
     }
     .works-list-open ul {
         padding-bottom: 1px;
@@ -1354,6 +1357,7 @@ td {
     align-items: center;
     margin-right: 20px;
     margin-bottom: 50px;
+    user-select: none;
 }
 
 .services-insta_item-title {
@@ -1391,6 +1395,7 @@ td {
         max-width: 300px;
         display: flex;
         flex-direction: column;
+        user-select: none;
         .developer-price__item__wrapper {
             display: flex;
             flex-direction: column;
@@ -1514,7 +1519,7 @@ td {
     margin-top: 100px;
     .important-developer__wrapper {
         padding: 60px 0 45px 0;
-        border: 3px solid #f4b92f;
+        border: 2px solid #f4b92f;
         display: flex;
         .important-developer__right {
             margin: 0 65px;
@@ -1542,7 +1547,6 @@ td {
             .btn-gold {
                 margin-top: 35px;
                 font-style: normal;
-                font-weight: bold;
                 font-size: 20px;
                 line-height: 23px;
                 color: #ffffff;
@@ -1552,7 +1556,7 @@ td {
 }
 
 .site-description {
-    margin-top: 150px;
+    margin-top: 50px;
     padding: 40px 0;
     .site-description__title {
         margin: 0;
@@ -1606,6 +1610,8 @@ td {
                     line-height: 23px;
                     color: #000000;
                     text-transform: uppercase;
+                    text-decoration: none;
+                    user-select: none;
                 }
             }
         }
@@ -1902,6 +1908,7 @@ td {
     flex-direction: column;
     border: 2px solid rgba(244, 185, 47, 0.5);
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
+    user-select: none;
 }
 
 .context-price__item:hover {
@@ -2514,6 +2521,7 @@ td {
     color: #202020;
     text-transform: uppercase;
     transition: all ease 0.15s;
+    user-select: none;
 }
 
 .btn-success:hover {
@@ -2844,7 +2852,14 @@ footer {
     max-width: 31.333333%;
     transition: 0.5s;
 }
-
+.blog-post__description {
+    position: relative;
+}
+.blog-post__date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 .blog-post:hover {
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.35);
 }

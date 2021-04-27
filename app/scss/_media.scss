@@ -375,10 +375,10 @@
         display: none;
     }
     .important-developer {
-        margin-top: 100px;
+        margin-top: 50px;
         .important-developer__wrapper {
             padding: 30px 0 45px 0;
-            border: 5px solid #f4b92f;
+            border: 2px solid #f4b92f;
             display: flex;
             .important-developer__right {
                 margin: 0 25px;
@@ -387,6 +387,9 @@
                 }
             }
         }
+    }
+    .site-description {
+        margin-top: 0;
     }
     .advertising-basics_block-img {
         display: none;

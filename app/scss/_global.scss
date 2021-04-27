@@ -108,6 +108,7 @@ a:hover {
     border-radius: 50px;
     transition: all ease 0.15s;
     text-decoration: none!important;
+    user-select: none;
 }
 
 .btn-black:hover {
@@ -126,6 +127,7 @@ a:hover {
     border: none;
     transition: all ease 0.15s;
     text-decoration: none!important;
+    user-select: none;
 }
 
 .btn-gold:hover {
