@@ -655,13 +655,6 @@ td {
 .home-abaout__wrapper {
     display: flex;
     flex-wrap: wrap;
-    ul {
-        padding-left: 20px;
-        line-height: 1.8em;
-        li {
-            list-style: outside;
-        }
-    }
     .left {
         width: 50%;
         margin-top: 100px;
@@ -671,33 +664,24 @@ td {
     }
 }
 
-.home-seo__wrapper {
-    display: flex;
-}
+
 
 .home-context {
     margin-top: 80px;
     background: #f3f3f3;
     padding-bottom: 5px;
-    h2 {
-        padding-top: 30px;
-    }
     .options-context h2 {
         padding-top: 0;
         margin-top: 0;
     }
 }
-
-.home-context__description {
+.content-home-img {
     display: flex;
-    justify-content: space-between;
-    .home-context__description__left {
-        max-width: 800px;
-    }
+    flex-wrap: wrap;
 }
-
-.home-developer {
-    margin-bottom: 50px;
+.content-home-img__item img {
+    height: auto;
+    max-width: 100%;
 }
 
 //Конец главной
@@ -2859,6 +2843,16 @@ footer {
     position: absolute;
     bottom: 0;
     right: 0;
+    display: flex;
+    color: #777;
+}
+.clock-blog {
+    background: url(/assets/img/clock-blog.png) no-repeat;
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 .blog-post:hover {
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.35);
