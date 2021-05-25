@@ -325,6 +325,9 @@
     .services-insta_item:nth-child(2n) {
         margin-right: 0;
     }
+    .tab-body__item {
+        flex-direction: column;
+    }
 }
 @media all and (min-width: 480px) and (max-width: 768px) {
     .container {
@@ -492,5 +495,8 @@
     }
     .top-bg-white {
         background: #fff;
+    }
+    .tab-body__item-img {
+        display: none;
     }
 }

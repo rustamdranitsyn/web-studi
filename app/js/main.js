@@ -1,3 +1,10 @@
+
+const linkWapper = document.querySelector('.link-wrapper');
+const link = linkWapper.querySelectorAll('.link');
+for ( let i = 0; i < link.length; i++) {
+   alert(i);
+}
+console.log(linkWapper);
 // блок вопрос-ответ
 document.querySelectorAll('.faq_item_title_inner').forEach(el => {
    el.addEventListener('click', function () {
