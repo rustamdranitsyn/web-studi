@@ -1,0 +1,156 @@
+.brief-insta__title-input {
+    font-size: 20px;
+}
+
+.form_radio:first-child {
+    margin: 3px 0 10px 0;
+}
+
+.form_radio {
+    margin-bottom: 10px;
+}
+
+.form-brief input,
+label {}
+
+.wrapper-brief-input {
+    margin-bottom: 25px;
+}
+
+.t-input-border {
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.brief-insta__text {
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.t-radio__wrapper {
+    margin-top: 10px;
+}
+
+.form_radio {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.radio_input {
+    -webkit-appearance: none;
+    /* Chrome */
+    -moz-appearance: none;
+    /* Firefox */
+    appearance: none;
+    /* убираем стандартные кружочки */
+    position: absolute;
+}
+
+.radio_label {
+    padding-left: 25px;
+    /* отступ слева */
+    font-size: 1rem;
+    cursor: pointer;
+    /* курсор рука */
+}
+
+.radio_label:before {
+    content: "";
+    display: block;
+    /* не в строку */
+    width: 18px;
+    /* ширина блока */
+    height: 18px;
+    /* высота блока */
+    border: 1px solid #ccc;
+    /* рамка */
+    background-color: #fff;
+    /* цвет фона */
+    border-radius: 50%;
+    /* получаем круг */
+    position: absolute;
+    /* расположен точно в родителе */
+    top: 3px;
+    /* расстояние от верха родителя */
+    left: 0;
+    /* расстояние слева от родителя */
+    z-index: 1;
+    /* на нижнем слое */
+    transition: border .1s linear;
+    /* плавный переход для border */
+}
+
+.radio_label:after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #FFA800;
+    border-radius: 50%;
+    opacity: 0;
+    /* полностью прозрачный */
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    z-index: 2;
+    /* на верхнем слое */
+    transition: opacity .1s linear;
+    /* плавный переход для opacity */
+}
+
+.radio_input:checked+.radio_label:before {
+
+    border-color: #FFA800;
+
+}
+
+.radio_input:checked+.radio_label:after {
+    opacity: 1;
+}
+
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: #f4b92f;
+    background-color: #f4b92f;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 1024px) {
+    .top-description-block h1 {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-description-block h1 {
+        margin-top: 80px;
+    }
+}
