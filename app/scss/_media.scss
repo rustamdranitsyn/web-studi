@@ -277,6 +277,9 @@
             max-width: 100%;
         }
     }
+    .top-description-brief h1 {
+        margin-top: 100px;
+    }
 }
 @media all and (max-width: 768px) {
     .item-head {
@@ -498,5 +501,28 @@
     }
     .tab-body__item-img {
         display: none;
+    }
+    .top-description-brief h1 {
+        margin-top: 80px;
+    }
+    .structure-vizitka__right-img {
+        display: none;
+    }
+    .structure-vizitka__right {
+        margin: 0 auto;
+    }
+    .structure-vizitka__right-btn {
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .btn-docs {
+        margin-bottom: 10px;
+    }
+    .title-brief {
+        font-size: 2em;
+        margin: 0;
+        padding-top: 80px;
+        margin-bottom: 30px;
+        line-height: 32px;
     }
 }
