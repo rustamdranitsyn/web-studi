@@ -9,6 +9,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    window.onload = function submenu() {
+      document.querySelectorAll('.mobile-menu__collapse-btn').forEach(el => {
+        el.addEventListener('click', function () {
+          let slide = this.closest('.subparagraph').querySelector('.mob-submenu');
+          slide.style.display = (slide.offsetWidth > 0 || slide.offsetHeight > 0) ? 'none' : 'block';
+          this.classList.toggle('open');
+          let icon = this.closest('.subparagraph').querySelector('.icon_mob-submenu');
+          icon.classList.toggle('ic-rotate');
+        })
+      });
+    }
+
+  </script>
 </head>
 
 <body>
@@ -24,11 +38,43 @@
             <div class="menu__box">
               <div class="nav__menu-wrapper">
                 <ul>
-                  <li><a class="menu__item" href="#">Главная</a></li>
-                  <li><a class="menu__item" href="#">Проекты</a></li>
-                  <li><a class="menu__item" href="#">Команда</a></li>
-                  <li><a class="menu__item" href="#">Блог</a></li>
-                  <li><a class="menu__item" href="#">Контакты</a></li>
+                  <li><a class="menu__item" href="/seo">Продвижение</a></li>
+                  <li class="subparagraph">
+                      <span class="wrapper-subparagraph">
+                      <a class="menu__item" href="/razrabotka-sajtov">
+                          Разработка
+                      </a>
+                      <button class="mobile-menu__collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#mobile-menu__collapse_23" aria-expanded="false">
+                          <svg class="icon_mob-submenu" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="black" d="M10.2167 0.333313L11.5 1.61665L6 7.11665L0.5 1.61665L1.78333 0.333313L6 4.54998L10.2167 0.333313Z"></path>
+                          </svg>
+                      </button>
+                      </span>
+                      <ul class="mob-submenu" style="display: none;">
+                        <li><a href="/razrabotka-sajtov/sajt-vizitka">Cайт-визитка</a></li>
+                        <li><a href="/razrabotka-sajtov/landing-page">Landing Page</a></li>
+                        <li><a href="/razrabotka-sajtov/sajt-kompanii">Сайт компании</a></li>
+                        <li><a href="/razrabotka-sajtov/sajt-internet-magazin"></a>Интернет-магазин</li>
+                      </ul>
+                  </li>
+                  <li class="subparagraph">
+                      <span class="wrapper-subparagraph">
+                      <a class="menu__item" href="/kontekstnaya-reklama">
+                          Реклама
+                      </a>
+                      <button class="mobile-menu__collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#mobile-menu__collapse_23" aria-expanded="false">
+                          <svg class="icon_mob-submenu" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" fill="black" d="M10.2167 0.333313L11.5 1.61665L6 7.11665L0.5 1.61665L1.78333 0.333313L6 4.54998L10.2167 0.333313Z"></path>
+                          </svg>
+                      </button>
+                      </span>
+                      <ul class="mob-submenu" style="display: none;">
+                        <li><a href="/kontekstnaya-reklama/yandex-direkt">Яндекс.Директ</a></li>
+                        <li><a href="/kontekstnaya-reklama/nastroyka-google-ads">Google AdWords</a></li>
+                      </ul>
+                  </li>
+                  <li><a class="menu__item" href="/prodvizhenie-instagram">Instagram</a></li>
+                  <li><a class="menu__item" href="/audit">Аудит</a></li>
                 </ul>
               </div>
               <div class="mob-nav-contact__nav__wrapper">
@@ -143,12 +189,14 @@
         <div class="top-description-wrapper__site-card_top">
           <div itemscope="" itemtype="http://schema.org/WPHeader" class="top-description-wrapper__site-card__left">
             <h1 itemprop="name">
-                Создание сайта визитки в Омске
+              Создание сайта визитки в Омске
             </h1>
-          <p itemprop="description">
-            Вы можете создать страницу компании в интернете и разместить информацию о бизнесе. Такой сайт часто является временным решением, пока не будет разработан более серьезный сайт, и станет простой визитной карточкой компания.
-          </p>
-          
+            <p itemprop="description">
+              Вы можете создать страницу компании в интернете и разместить информацию о бизнесе. Такой сайт часто
+              является временным решением, пока не будет разработан более серьезный сайт, и станет простой визитной
+              карточкой компания.
+            </p>
+
           </div>
           <div class="top-description-img">
             <img loading="lazy" src="/assets/img/mockups-vizitka.png" alt="Пример сайта визитки">
@@ -173,10 +221,12 @@
                   <div class="top-card-order__item">
                     <div class="top-card-order__item-title">
                       <a href="tel:79028211655">+7 902 821 16 55</a>
-                      <a target="blank" rel="nofollow" href="https://wa.me/79028211655" onclick="ym(70966021,'reachGoal','clickWhatsapp'); return true;">
+                      <a target="blank" rel="nofollow" href="https://wa.me/79028211655"
+                        onclick="ym(70966021,'reachGoal','clickWhatsapp'); return true;">
                         <i class="icon whatsapp-inst"></i>
                       </a>
-                      <a target="blank" rel="nofollow" href="https://t.me/rdranitsyn" onclick="ym(70966021,'reachGoal','clickTlg'); return true;">
+                      <a target="blank" rel="nofollow" href="https://t.me/rdranitsyn"
+                        onclick="ym(70966021,'reachGoal','clickTlg'); return true;">
                         <i class="icon telegram-inst"></i>
                       </a>
                     </div>

@@ -523,7 +523,47 @@ td {
     transition-duration: 0.25s;
 }
 
-
+.mob-submenu {
+    margin-top: 12px;
+    li {
+        text-align: left;
+        margin-left: 50px;
+        a {
+            padding: 5px 0;
+            font-size: 18px;
+        }
+    }
+}
+.parent-subparagraph {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper-subparagraph {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgba(245,242,242,0.2);
+}
+.mobile-menu__collapse-btn {
+    padding-top: 20px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-shrink: 0;
+    width: 36px;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.icon_mob-submenu {
+    min-height: 8px;
+    max-width: 12px;
+}
+.ic-rotate {
+    transform: rotate(180deg);
+}
 /* Конец мобильного меню */
 
 .wrapper-background {

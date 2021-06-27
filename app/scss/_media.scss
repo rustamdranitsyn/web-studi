@@ -24,9 +24,6 @@
     .top-advertising {
         display: none;
     }
-    .top-description-img {
-        display: none;
-    }
     .top-description-wrapper__site-card
         .top-description-wrapper__site-card_top
         .top-description-wrapper__site-card__left {
@@ -279,6 +276,12 @@
     }
     .top-description-brief h1 {
         margin-top: 100px;
+    }
+    .top-description-wrapper__site-card_top {
+        flex-direction: column;
+    }
+    .top-description-img img {
+        max-width: 100%;
     }
 }
 @media all and (max-width: 768px) {

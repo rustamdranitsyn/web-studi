@@ -1,3 +1,13 @@
+// блок выподающего меню на мобилки
+function submenu() {
+   document.querySelectorAll('.mobile-menu__collapse-btn').forEach(el => {
+ el.addEventListener('click', function() {
+     let slide = this.closest('.subparagraph').querySelector('.mob-submenu');
+     slide.style.display = (slide.offsetWidth > 0 || slide.offsetHeight > 0) ? 'none' : 'block';
+     this.classList.toggle('open');
+ })
+});
+}
 
 const linkWapper = document.querySelector('.link-wrapper');
 const link = linkWapper.querySelectorAll('.link');
