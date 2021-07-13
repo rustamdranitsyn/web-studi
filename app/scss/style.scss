@@ -237,6 +237,10 @@ td {
             border-bottom: 1px solid rgba(43, 43, 43, 0.1);
             a {
                 z-index: 9999;
+                &:hover::after,
+                &:focus::after {
+                width: 0;
+                }
             }
         }
     }
