@@ -19,7 +19,7 @@ body {
 a {
     display: inline-block;
     text-decoration: none;
-    color: #FFA800;
+    color: #736bae;
     &:hover {
         text-decoration: underline;
     }
@@ -114,7 +114,7 @@ a:hover {
     text-align: center;
     padding: 16px 50px;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 13px;
     line-height: 21px;
     color: #ffffff;
     background: #202020;
@@ -132,10 +132,10 @@ a:hover {
     text-align: center;
     padding: 16px 50px;
     color: #202020;
-    background: $gold;
-    font-size: 18px;
+    background: #736bae;
+    font-size: 13px;
     line-height: 21px;
-    color: #202020;
+    color: #fff;
     border-radius: 50px;
     border: none;
     transition: all ease 0.15s;
@@ -144,7 +144,7 @@ a:hover {
 }
 
 .btn-gold:hover {
-    background: #fcc954;
+    background: #754dad;
 }
 
 .works-list-open {

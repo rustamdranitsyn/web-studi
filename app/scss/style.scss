@@ -122,7 +122,7 @@ td {
 .top-bar__call-back {
     display: flex;
     margin-left: 16px;
-    border: 1px solid #fdd45e;
+    border: 1px solid #736bae;
     border-radius: 50px;
     a {
         padding: 14px 22px;
@@ -235,11 +235,15 @@ td {
             font-size: 16px;
             margin-left: 0;
             border-bottom: 1px solid rgba(43, 43, 43, 0.1);
+            transition: all ease 0.15s;
             a {
                 z-index: 9999;
                 &:hover::after,
                 &:focus::after {
                 width: 0;
+                }
+                &:hover {
+                    color: #754dad;
                 }
             }
         }
@@ -641,15 +645,17 @@ td {
     position: relative;
     .popup__title {
         font-weight: bold;
-        font-size: 25px;
-        line-height: 29px;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        margin-bottom: 5px;
         color: #202020;
     }
     .popup__test {
         display: flex;
         flex-direction: column;
         .description-popup {
-            text-align: left;
+            text-align: center;
         }
         .btn-success {
             padding: 12px 0;
@@ -831,7 +837,7 @@ td {
 .price-promotion__item-center {
     background: #202020;
     .price-promotion__item__title {
-        color: $gold;
+        color: #754dad;
     }
     .price-promotion__item__list-services {
         li {
@@ -851,18 +857,18 @@ td {
     margin-top: 48px;
     display: block;
     a {
-        background: $gold;
+        background: #736bae;
         border-radius: 50px;
         padding: 12px 72px;
-        font-size: 18px;
+        font-size: 13px;
         line-height: 21px;
-        color: #202020;
+        color: #fff;
         transition: all ease 0.15s;
         text-decoration: none;
         user-select: none;
     }
     a:hover {
-        background: #fcc954;
+        background: #754dad;
     }
 }
 
@@ -1291,6 +1297,10 @@ td {
     font-size: 18px;
     font-weight: bold;
     color: #202020;
+    transition: all ease 0.15s;
+    &:hover {
+        color: #754dad;
+    }
 }
 .question-smm {
     padding: 60px 0 100px 0;
@@ -1360,7 +1370,6 @@ td {
     .developer-price__item {
         margin-top: 20px;
         cursor: context-menu;
-        border: 2px solid rgba(244, 185, 47, 0.5);
         box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
         max-width: 300px;
         display: flex;
@@ -1398,16 +1407,16 @@ td {
             }
             .btn-developer {
                 margin-top: 65px;
-                background: #f4b92f;
+                background: #736bae;
                 border-radius: 50px;
-                font-size: 18px;
-                color: #202020;
+                font-size: 13px;
+                color: #fff;
                 padding: 10px 65px;
                 transition: all ease 0.15s;
                 text-decoration: none;
             }
             .btn-developer:hover {
-                background: #fcc954;
+                background: #754dad;
             }
         }
     }
@@ -1489,7 +1498,7 @@ td {
     margin-top: 100px;
     .important-developer__wrapper {
         padding: 60px 0 45px 0;
-        border: 2px solid #f4b92f;
+        border: 2px solid #754dad;
         display: flex;
         .important-developer__right {
             margin: 0 65px;
@@ -1500,24 +1509,18 @@ td {
                 margin-bottom: 20px;
             }
             .important-developer__right_top-title {
-                color: #e30a0a;
+                color: #754dad;
             }
             .important-developer__right_bottom {
                 margin-top: 65px;
                 .important-developer__right_bottom-title {
-                    color: $gold;
-                }
-                .important-developer__right_bottom-description {
-                    font-weight: bold;
-                    font-size: 20px;
-                    line-height: 23px;
-                    color: #202020;
+                    color: #754dad;
                 }
             }
             .btn-gold {
                 margin-top: 35px;
                 font-style: normal;
-                font-size: 20px;
+                font-size: 13px;
                 line-height: 23px;
                 color: #ffffff;
             }
@@ -1778,13 +1781,16 @@ td {
                 display: flex;
                 flex-direction: column;
                 a {
-                    color: #202020;
+                    color: #fff;
                 }
                 .top-card-order__item-title {
                     font-weight: bold;
                     font-size: 25px;
                     line-height: 29px;
                     color: #202020;
+                    a {
+                        color: #202020; 
+                    }
                 }
                 .top-card-order__item-price {
                     margin-top: 15px;
@@ -1865,7 +1871,7 @@ td {
     transition: 0.1s;
 }
 .structure-vizitka__item:hover {
-    color: #FFA800;
+    color: #754dad;
 }
 
 
@@ -1880,7 +1886,7 @@ td {
     font-size: 15px;
     line-height: 18px;
     color: #202020;
-    border: 1px solid #F4B92F;
+    border: 1px solid #736bae;
     border-radius: 30px;
     padding: 10px 27px 9px 27px;
 }
@@ -1917,7 +1923,6 @@ td {
     max-width: 360px;
     display: flex;
     flex-direction: column;
-    border: 2px solid rgba(244, 185, 47, 0.5);
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
     user-select: none;
 }
@@ -1939,7 +1944,7 @@ td {
     font-weight: 500;
     font-size: 25px;
     line-height: 29px;
-    color: #f4b92f;
+    color: #202020;
 }
 
 .context-price__item__wrapper {
@@ -1974,17 +1979,17 @@ td {
     margin-top: 20px;
     display: block;
     a {
-        background: #f4b92f;
+        background: #736bae;
         border-radius: 50px;
         padding: 12px 72px;
-        font-size: 18px;
+        font-size: 13px;
         line-height: 21px;
-        color: #202020;
+        color: #fff;
         transition: all ease 0.15s;
         text-decoration: none;
     }
     a:hover {
-        background: #fcc954;
+        background: #754dad;
     }
 }
 
@@ -2008,7 +2013,7 @@ td {
     justify-content: space-between;
     .process-developer__item {
         padding: 30px 20px;
-        border: 2px solid #f4b92f;
+        border: 2px solid #736bae;
         max-width: 380px;
         display: flex;
         flex-direction: column;
@@ -2266,7 +2271,7 @@ td {
     padding: 30px 20px;
     margin: 0 auto;
     max-width: 1000px;
-    border: 3px solid rgba(244, 185, 47, 0.5);
+    border: 3px solid #736bae;
     .audit-options__item {
         margin-top: 30px;
         display: flex;
@@ -2305,7 +2310,7 @@ td {
         margin-top: 30px;
         margin-bottom: 0;
         &::before {
-            color: #ffd11a;
+            color: #754dad;
             content: "•";
             padding-right: 20px;
             display: inline-block;
@@ -2442,6 +2447,7 @@ td {
             background-color: #fff;
             color: #000;
             height: 100%;
+            max-width: 480px;
             padding: 30px;
             position: relative;
             .popup__test {
@@ -2449,11 +2455,11 @@ td {
                 flex-direction: column;
             }
             .popup__title {
-                text-align: center;
-                font-size: 32px;
                 font-weight: bold;
-                font-size: 40px;
-                line-height: 47px;
+                font-size: 22px;
+                line-height: 26px;
+                text-align: center;
+                margin-bottom: 5px;
                 color: #202020;
             }
             .popup__close {
@@ -2474,12 +2480,18 @@ td {
 .input {
     display: flex;
     position: relative;
-    padding: 15px 20px;
     margin-top: 15px;
-    width: 100%;
-    border: 1px solid #c5c5c5;
+    background: #FFFFFF;
+    border: 1px solid #EBEBEB;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 25px;
+    width: 100%;
+    padding: 12px 20px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #9C9C9C;
+    outline: none;
     input {
         width: 100%;
         height: 100%;
@@ -2500,7 +2512,7 @@ td {
         font-weight: normal;
         line-height: 28px;
         color: #c5c5c5;
-        border: 1px solid #c5c5c5;
+        border: 1px solid #EBEBEB;
         box-sizing: border-box;
         border-radius: 10px;
         padding-left: 15px;
@@ -2512,20 +2524,20 @@ td {
 
 .btn-success {
     margin-top: 15px;
-    padding: 15px 0;
-    background: #f4b92f;
-    border: none;
-    border-radius: 10px;
-    font-size: 21px;
-    line-height: 28px;
-    color: #202020;
-    text-transform: uppercase;
+    background: #736bae;
+    border-radius: 50px;
+    padding: 12px 72px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #fff;
     transition: all ease 0.15s;
+    text-decoration: none;
+    border: none;
     user-select: none;
 }
 
 .btn-success:hover {
-    background: #fcc954;
+    background: #754dad;
 }
 
 .fqa {
@@ -2540,12 +2552,13 @@ td {
 }
 
 .description-popup {
-    max-width: 500px;
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 20px;
-    color: #c5c5c5;
+    max-width: 290px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
     text-align: center;
+    color: #9C9C9C;
+    margin: 10px auto 0;
 }
 
 .icon-user {
@@ -2960,7 +2973,7 @@ footer {
             text-decoration: underline;
             font-size: 15px;
             &:hover {
-                color: #FFA800;
+                color: #754dad;
             }
         }
     }
@@ -3222,7 +3235,7 @@ footer {
     display: block;
     width: 12px;
     height: 12px;
-    background-color: #FFA800;
+    background-color: #736bae;
     border-radius: 50%;
     opacity: 0;
     /* полностью прозрачный */
@@ -3237,7 +3250,7 @@ footer {
 
 .radio_input:checked+.radio_label:before {
 
-    border-color: #FFA800;
+    border-color: #736bae;
 
 }
 
@@ -3274,8 +3287,8 @@ footer {
 }
 
 .custom-checkbox:checked+label::before {
-    border-color: #f4b92f;
-    background-color: #f4b92f;
+    border-color: #736bae;
+    background-color: #736bae;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 .subtitle-brief {
