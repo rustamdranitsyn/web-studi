@@ -38,6 +38,16 @@ body::-webkit-scrollbar-thumb {
     a {
         color: #fff;
         text-decoration: none;
+        transition: 0.15s;
+        &:hover {
+            color: #754dad;
+        }
+    }
+    .popup-link {
+        color: #fff;
+        &:hover {
+            color: #fff;
+        }
     }
 }
 
@@ -461,7 +471,6 @@ td {
         }
     }
 }
-
 .mob-nav-contact__nav__wrapper:after {
     content: "";
     position: absolute;
@@ -974,7 +983,6 @@ td {
     li {
         padding-left: 0;
         display: flex;
-        margin-bottom: 25px;
         max-width: 500px;
         &::before {
             content: "";
@@ -1308,7 +1316,7 @@ td {
     color: #202020;
     transition: all ease 0.15s;
     &:hover {
-        color: #754dad;
+        color: #777;
     }
 }
 .question-smm {
@@ -2136,7 +2144,7 @@ td {
     h2 {
         color: #ffffff;
         span {
-            color: $gold;
+            color: #754dad;
         }
     }
     .list-item-head {
@@ -2195,20 +2203,20 @@ td {
             }
             .active {
                 .num {
-                    color: #ffaa00;
+                    color: #736bae;
                 }
                 .name {
-                    color: #ffaa00;
+                    color: #736bae;
                     &::before {
                         content: "";
                         position: absolute;
                         width: 16px;
                         height: 16px;
-                        background: #ffaa00;
+                        background: #754dad;
                         border-radius: 50%;
                         left: 12px;
                         bottom: -32px;
-                        box-shadow: 0 0 15px #ffaa00;
+                        box-shadow: 0 0 15px #754dad;
                         z-index: 2;
                     }
                 }
@@ -2234,13 +2242,13 @@ td {
             font-weight: bold;
             font-size: 20px;
             line-height: 23px;
-            color: #f4b92f;
+            color: #754dad;
         }
         .tab-body__item__block-list__left-title {
             margin-top: 15px;
             font-weight: bold;
             line-height: 18px;
-            color: #f4b92f;
+            color: #754dad;
         }
         ul li {
             padding-left: 2rem;
@@ -2398,7 +2406,6 @@ td {
     display: flex;
     flex-wrap: wrap;
     .about-certificates__item {
-        border: 3px solid rgba(244, 185, 47, 0.5);
         box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
         margin: 0 10px;
         img {
