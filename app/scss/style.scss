@@ -255,7 +255,6 @@ td {
             font-size: 16px;
             margin-left: 0;
             border-bottom: 1px solid rgba(43, 43, 43, 0.1);
-            transition: all ease 0.15s;
             a {
                 z-index: 9999;
                 &:hover::after,
@@ -1214,7 +1213,7 @@ td {
         color: #202020;
         transition: 0s;
         &:hover {
-            color: #f4b92f;
+            color: #754dad;
             transition-delay: 0.8ms;
         }
     }
