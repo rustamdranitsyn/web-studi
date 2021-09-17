@@ -2885,6 +2885,26 @@ footer {
     max-width: 31.333333%;
     transition: 0.5s;
 }
+.blog-post__link {
+    position: relative;
+}
+.blog-post__wrapper {
+    position: relative;
+}
+.result-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(34, 34, 34, 0.9);
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    padding: 30px;
+    color: #ffffff;
+    overflow: hidden;
+}
+
 .blog-post__description {
     position: relative;
 }
@@ -2909,10 +2929,6 @@ footer {
 .blog-post__title a {
     transition: 0.5s;
     color: #202020;
-    &:hover {
-        color: #777;
-        text-decoration: none;
-    }
 }
 .blog-content {
     p {
@@ -3120,6 +3136,9 @@ footer {
     position: absolute;
     top: 0;
 }
+.case-text {
+    padding: 0.5rem;
+}
 .title-case {
     max-width: 650px;
     position: relative;
@@ -3136,19 +3155,82 @@ footer {
 .preview-case {
     margin-top: 20px;
     border: 1px solid #eee;
-    padding: 0.5rem;
-    flex: 0 0 45.333333%;
+    flex: 0 0 31.333333%;
     margin: 0 1% 20px;
-    max-width: 45.333333%;
+    max-width: 32.333333%;
     transition: 0.5s;
+}
+.case-post__title {
+    color: #202020;
+    font-size: 16px;
+    line-height: 22px;
+    position: relative;
+}
+.case-post__description {
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 5px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+.preview-content:hover > .case-text .case-post__description {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.preview-content:hover > .case-text .case-post__title {
+    color: #ffffff;
+    text-decoration: underline;
 }
 .preview-case:hover {
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.35);
 }
+.preview-content:hover > .result-wrapper {
+    opacity: 1;
+}
+.blog-post__title a:hover {
+    color: #777;
+    text-decoration: none;
+}
 .preview-case__img {
     width: 100%;
-    height: 364px;
+    height: 280px;
     object-fit: cover;
+}
+.cases-card__wrapper {
+    margin-top: -50px;
+}
+.cases-card__result {
+    transform: translateY(100%);
+    transition: transform 0.35s cubic-bezier(0.62, 0.02, 0.34, 1),
+        -webkit-transform 0.35s cubic-bezier(0.62, 0.02, 0.34, 1);
+    margin-bottom: 25px;
+}
+.cases-card__result-wrapper {
+    margin-bottom: 25px;
+}
+.cases-card__numbers {
+    display: flex;
+    align-items: baseline;
+    font-weight: 500;
+}
+
+.cases-card__number {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.cases-card__growth {
+    margin-left: 8px;
+    color: #219653;
+}
+
+.cases-card__caption {
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 22px;
+    padding-right: 170px;
 }
 .case-content {
     margin-bottom: 100px;
@@ -3347,7 +3429,7 @@ footer {
     -webkit-animation: hoverWave linear 1s infinite;
     animation: hoverWave linear 1s infinite;
     .ic-callback {
-        right: 16px;      
+        right: 16px;
         top: 14px;
     }
     .ic-callback-close {
@@ -3358,7 +3440,7 @@ footer {
 }
 .callback-bt:hover {
     animation: none;
-    background: rgb(147, 149, 152)!important;
+    background: rgb(147, 149, 152) !important;
     .ic-callback-close {
         display: block;
     }
