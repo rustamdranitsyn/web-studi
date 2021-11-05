@@ -24,9 +24,7 @@
     .top-advertising {
         display: none;
     }
-    .top-description-wrapper__site-card
-        .top-description-wrapper__site-card_top
-        .top-description-wrapper__site-card__left {
+    .top-description-wrapper__site-card .top-description-wrapper__site-card_top .top-description-wrapper__site-card__left {
         width: 100%;
     }
     .card-adaptive__right {
@@ -162,8 +160,7 @@
         .advertising-basics__wrapper {
             justify-content: center;
             .advertising-basics_block {
-                .advertising-basics_block-title {
-                }
+                .advertising-basics_block-title {}
                 .advertising-basics_block-subtitle {
                     margin-top: 5px;
                 }
@@ -285,6 +282,7 @@
         max-width: 100%;
     }
 }
+
 @media all and (max-width: 768px) {
     .item-head {
         margin-top: 4rem;
@@ -336,6 +334,7 @@
         flex-direction: column;
     }
 }
+
 @media all and (min-width: 480px) and (max-width: 768px) {
     .container {
         max-width: 100%;
