@@ -534,4 +534,17 @@
     .popup .popup__body .popup__content {
         max-width: 345px;
     }
+    .order-price {
+        flex-direction: column;
+    }
+    .order-price .popup-link {
+        margin-top: 20px;
+    }
+    .gallery-primer__wrapper {
+        justify-content: center;
+    }
+    .gallery-primer__wrapper .item .primer-photo {
+        width: 145px;
+        height: 145px;
+    }
 }
