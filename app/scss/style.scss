@@ -25,10 +25,6 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid #736bae;
 }
 
-h3 {
-    font-size: 30px;
-}
-
 .top-bg-gold {
     background: linear-gradient(100.49deg, #f4b92f 63.25%, #fbcf56 98.17%);
 }
@@ -91,6 +87,12 @@ td {
     height: 25px;
 }
 
+.top-bar__ic-messages-2 {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
 .top-bar__ic-social {
     display: block;
     width: 35px;
@@ -129,11 +131,11 @@ td {
 }
 
 .i-whatsapp {
-    background: url(../img/whatsapp.png) no-repeat top left;
+    background: url(../img/ic-35-whatsapp-2.png) no-repeat top left;
 }
 
 .i-telegram {
-    background: url(../img/telegram.png) no-repeat top left;
+    background: url(../img/ic-35-telegram-2.png) no-repeat top left;
 }
 
 .i-viber {
@@ -313,8 +315,8 @@ td {
 
 .mob-header-messages {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
 }
 
 .mob-header__contact-phone {
@@ -326,7 +328,7 @@ td {
 
 .i-phone-mob {
     background: url(../img/call-mob.svg) no-repeat top left;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .mob-header__messages {
@@ -338,12 +340,12 @@ td {
 }
 
 .i-whatsapp-mob {
-    background: url(../img/whatsapp-mob.svg) no-repeat top left;
+    background: url(../img/whatsapp-mob-3.png) no-repeat top left;
     margin-right: 5px;
 }
 
 .i-telegram-mob {
-    background: url(../img/telegram-mob.svg) no-repeat top left;
+    background: url(../img/telegram-mob-3.png) no-repeat top left;
     margin-right: 5px;
 }
 
@@ -952,7 +954,6 @@ td {
             box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
             .description-seo__list-item__wrapper {
                 position: relative;
-                z-index: 999;
                 padding: 20px;
             }
             .description-seo__list-item-bg {
@@ -1148,57 +1149,43 @@ td {
 .with-us {
     position: relative;
     background: #171717;
-    .with-us__title {
-        margin: 0;
-        padding-top: 60px;
-        color: #fff;
-    }
-    .with-us__wrapper {
-        position: relative;
-        padding-top: 75px;
-        .with-us__item {
-            margin-top: 25px;
-            max-width: 455px;
-            .with-us__item__title {
-                font-weight: bold;
-                font-size: 25px;
-                line-height: 29px;
-                color: #ffffff;
-            }
-            .with-us__item__description {
-                margin-top: 15px;
-                font-size: 15px;
-                line-height: 18px;
-                color: #ffffff;
-            }
-        }
-        .with-us__right-block img {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-    }
-    .with-us__ready-work {
-        margin-top: 85px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 23px;
-        color: #ffffff;
-    }
-    .with-us__order {
-        margin-top: 28px;
-        text-align: center;
-    }
-    .with-us__information-ssessment {
-        margin: 0;
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 50px;
-        font-size: 15px;
-        line-height: 18px;
-        color: #ffffff;
-    }
+    padding-bottom: 120px;
+}
+
+.with-us__title {
+    margin: 0;
+    padding-top: 60px;
+    color: #fff;
+}
+
+.with-us__wrapper {
+    position: relative;
+    padding-top: 75px;
+}
+
+.with-us__item {
+    margin-top: 25px;
+    max-width: 455px;
+}
+
+.with-us__item__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    color: #ffffff;
+}
+
+.with-us__item__description {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.with-us__right-block img {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .seo-nuances__wrapper {
@@ -2290,118 +2277,6 @@ td {
     justify-content: space-between;
 }
 
-// .audit-description {
-//     padding-top: 30px;
-//     padding-bottom: 50px;
-//     background: #171717;
-//     color: #fff;
-//     h2 {
-//         color: #fff;
-//     }
-//     h3 {
-//         margin-top: 40px;
-//         margin-bottom: 0;
-//         font-weight: bold;
-//         font-size: 25px;
-//     }
-// }
-// .audit-options__wrapper {
-//     padding: 30px 20px;
-//     margin: 0 auto;
-//     max-width: 1000px;
-//     border: 3px solid #736bae;
-//     .audit-options__item {
-//         margin-top: 30px;
-//         display: flex;
-//         .audit-options__item-right {
-//             margin-left: 30px;
-//             h3 {
-//                 margin: 0;
-//                 line-height: 29px;
-//                 color: #202020;
-//             }
-//         }
-//         &:first-child {
-//             margin-top: 0;
-//         }
-//     }
-// }
-// .audit-white {
-//     margin-top: 60px;
-//     background: #171717;
-//     color: #fff;
-//     padding-top: 20px;
-//     padding-bottom: 40px;
-//     h2 {
-//         color: #fff;
-//     }
-//     .audit__wrapper {
-//         position: relative;
-//     }
-// }
-// .audit__wrapper {
-//     margin-top: 50px;
-//     position: relative;
-//     h3 {
-//         margin-top: 30px;
-//         margin-bottom: 0;
-//         &::before {
-//             color: #754dad;
-//             content: "•";
-//             padding-right: 20px;
-//             display: inline-block;
-//             font-size: 40px;
-//         }
-//     }
-//     p {
-//         &::after {
-//             margin-top: 7px;
-//             display: block;
-//             position: absolute;
-//             content: "";
-//             height: 1px;
-//             width: 160px;
-//             background-color: #e7e7e7;
-//             left: 0px;
-//         }
-//         &:last-child::after {
-//             width: 100% !important;
-//         }
-//     }
-// }
-// .order-audit__price {
-//     margin-top: 35px;
-//     font-size: 25px;
-// }
-// .order-audit__wrapper {
-//     margin-top: 45px;
-//     display: flex;
-// }
-// .order-audit-btn-black {
-//     margin-left: 15px;
-// }
-// .order-audit-btn {
-//     margin-top: 15px;
-//     a {
-//         white-space: pre;
-//     }
-// }
-// .oreder-seo-audit {
-//     margin-bottom: 50px;
-//     p {
-//         font-size: 15px;
-//         line-height: 21px;
-//         color: #202020;
-//     }
-// }
-// .oreder-seo-audit__wrapper {
-//     display: flex;
-//     justify-content: space-between;
-//     label {
-//         max-width: 500px;
-//         min-width: 345px;
-//     }
-// }
 .oreder-seo-audit p {
     text-align: center;
 }
@@ -2873,6 +2748,10 @@ footer {
     width: 100%;
 }
 
+.page-contents-link {
+    position: absolute;
+}
+
 .blog-post {
     margin-top: 20px;
     border: 1px solid #eee;
@@ -2995,6 +2874,7 @@ footer {
     float: none;
     vertical-align: top;
     max-height: 500px;
+    max-width: 1200px;
 }
 
 .wrapper-nav-page {
@@ -3002,6 +2882,7 @@ footer {
     border: 1px solid #ddd;
     width: 50%;
     padding: 10px;
+    margin-bottom: 20px;
     .nav-page-title {
         font-size: 22px;
     }
@@ -3797,7 +3678,8 @@ footer {
 .menu-drop__box {
     display: none;
     position: absolute;
-    top: 83px;
+    top: 50px;
+    padding-top: 30px;
     left: 0;
     width: 100%;
     z-index: 100;
@@ -4043,18 +3925,6 @@ details[open] summary:before {
     color: #754dad;
 }
 
-// #check-part-1 {
-//     width: 30px;
-//     height: 10px;
-//     transform: rotate(45deg);
-// }
-// #check-part-2 {
-//     width: 50px;
-//     height: 10px;
-//     transform: rotate(-45deg);
-//     left: 16px;
-//     top: -19px;
-// }
 // конец стилей smm
 .order-price {
     display: flex;
@@ -4173,20 +4043,6 @@ details[open] summary:before {
     margin: -5px 20px 0 0 !important;
 }
 
-// @keyframes growAndFadeInFontSize {
-//     0% {
-//         font-size: 0;
-//         opacity: 0;
-//     }
-//     100% {
-//         font-size: 1em;
-//         opacity: 1;
-//     }
-// }
-// .details-faq[open] {
-//     animation-name: growAndFadeInFontSize;
-//     animation-duration: 500ms;
-// }
 .details-faq[open] summary~* {
     animation: sweep 0.5s ease-in-out;
 }

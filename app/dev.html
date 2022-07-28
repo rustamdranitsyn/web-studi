@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script>
+        window.onload = function submenu() {
+            document.querySelectorAll('.mobile-menu__collapse-btn').forEach(el => {
+                el.addEventListener('click', function() {
+                    let slide = this.closest('.subparagraph').querySelector('.mob-submenu');
+                    slide.style.display = (slide.offsetWidth > 0 || slide.offsetHeight > 0) ? 'none' : 'block';
+                    this.classList.toggle('open');
+                    let icon = this.closest('.subparagraph').querySelector('.icon_mob-submenu');
+                    icon.classList.toggle('ic-rotate');
+                })
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header class="lock-padding">
+        <div class="mob-header">
+            <div class="container">
+                <div class="mob-menu__wrapper">
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                        <div class="menu__box">
+                            <div class="nav__menu-wrapper">
+                                <ul>
+                                    <li><a class="menu__item" href="/seo">SEO-продвижение</a></li>
+                                    <li class="subparagraph">
+                                        <span class="wrapper-subparagraph">
+                            <a class="menu__item" href="/smm">
+                                SMM-продвижение
+                            </a>
+                            <button class="mobile-menu__collapse-btn collapsed" type="button" data-toggle="collapse"
+                                data-target="#mobile-menu__collapse_23" aria-expanded="false">
+                                <img width="11" height="8" class="icon_mob-submenu" src="img/ic_black_arrow_down.svg" alt="">
+                            </button>
+                        </span>
+                                        <ul class="mob-submenu" style="display: none;">
+                                            <li><a href="/smm/prodvizhenie-instagram">Instagram</a></li>
+                                            <li><a href="/smm/prodvizhenie-vkontakte">ВКонтакте</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="subparagraph">
+                                        <span class="wrapper-subparagraph">
+                          <a class="menu__item" href="/razrabotka-sajtov">
+                              Разработка
+                          </a>
+                          <button class="mobile-menu__collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#mobile-menu__collapse_23" aria-expanded="false">
+                              <img width="11" height="8" class="icon_mob-submenu"  src="img/ic_black_arrow_down.svg" alt="">
+                          </button>
+                          </span>
+                                        <ul class="mob-submenu" style="display: none;">
+                                            <li><a href="/razrabotka-sajtov/sajt-vizitka">Cайт-визитка</a></li>
+                                            <li><a href="/razrabotka-sajtov/landing-page">Landing Page</a></li>
+                                            <li><a href="/razrabotka-sajtov/sajt-kompanii">Сайт компании</a></li>
+                                            <li><a href="/razrabotka-sajtov/sajt-internet-magazin">Интернет-магазин</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="subparagraph">
+                                        <span class="wrapper-subparagraph">
+                          <a class="menu__item" href="/kontekstnaya-reklama">
+                              Реклама
+                          </a>
+                          <button class="mobile-menu__collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#mobile-menu__collapse_23" aria-expanded="false">
+                              <img width="11" height="8" class="icon_mob-submenu"  src="img/ic_black_arrow_down.svg" alt="">
+                          </button>
+                          </span>
+                                        <ul class="mob-submenu" style="display: none;">
+                                            <li><a href="/kontekstnaya-reklama/yandex-direkt">Яндекс.Директ</a></li>
+                                            <li><a href="/kontekstnaya-reklama/nastroyka-google-ads">Google AdWords</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="subparagraph">
+                                        <span class="wrapper-subparagraph">
+                          <a class="menu__item" href="/audit">Аудит</a>
+                          <button class="mobile-menu__collapse-btn collapsed" type="button" data-toggle="collapse" data-target="#mobile-menu__collapse_23" aria-expanded="false">
+                              <img width="11" height="8" class="icon_mob-submenu"  src="img/ic_black_arrow_down.svg" alt="">
+                          </button>
+                          </span>
+                                        <ul class="mob-submenu" style="display: none;">
+                                            <li><a href="/audit/seo-audit">SEO-аудит</a></li>
+                                            <li><a href="/audit/tehnicheskij">Технический аудит</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <span class="city-top">
+                      <span class="city-top-link" onclick="clickCite()">Омск</span>
+                                </span>
+                            </div>
+                            <div class="mob-nav-contact__nav__wrapper">
+                                <ul class="mob-nav-contact__nav">
+                                    <li class="mob-nav-contact__nav-item"><a href="/blog">Блог</a></li>
+                                    <li class="mob-nav-contact__nav-item"><a href="/obo-mne">Обо мне</a></li>
+                                    <li class="mob-nav-contact__nav-item"><a href="/kontaktyi">Контакты</a></li>
+                                </ul>
+                                <div class="mob-top-bar__call-back">
+                                    <a href="#popup" class="popup-link" onclick="ym(70966021,'reachGoal','orderHeader'); return true;">Заказать звонок</a>
+                                </div>
+                                <div class="menu__box__contact">
+                                    <a href="tel:+79028211655" class="menu__box-phone">
+                        +7 902 821 16 55
+                      </a>
+                                    <span class="menu__box__info">
+                        Звоните с 8.00 до 21.00
+                      </span>
+                                    <a class="menu__box__info" href="mailto:info@seo-dranitsyn.ru">
+                        info@seo-dranitsyn.ru
+                      </a>
+                                    <div class="top-bar__social">
+                                        <a href="https://www.instagram.com/seo_dranitsyn/" target="_blank" rel="nofollow" class="inst">
+                                            <i class="i-inst top-bar__ic-social"></i>
+                                        </a>
+                                        <a href="https://vk.com/rdranitsyn" target="_blank" rel="nofollow" class="vk">
+                                            <i class="i-vk top-bar__ic-social"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mob-header__contact">
+                        <div class="mob-header__contact-phone">
+                            <i class="i-phone-mob mob-header-messages"></i>
+                            <a href="tel:+79028211655">+7 902 821 16 55</a>
+                        </div>
+                    </div>
+                    <div class="mob-header__messages">
+                        <a target="blank" rel="nofollow" href="https://wa.me/79028211655" onclick="ym(70966021,'reachGoal','clickWhatsapp'); return true;">
+                            <i class="i-whatsapp-mob mob-header-messages"></i>
+                        </a>
+                        <a target="blank" rel="nofollow" href="https://t.me/rdranitsyn" onclick="ym(70966021,'reachGoal','clickTlg'); return true;">
+                            <i class="i-telegram-mob mob-header-messages"></i>
+                        </a>
+                    </div>
+                    <a href="/" class="logo-mob__wrapper">
+                        <img width="41" height="39" src="img/logo-moon-mob.svg" alt="Частный SEO-специалист Рустам Драницын">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar__wrapper">
+                    <div class="top-bar__left-block">
+                        <div class="top-bar__logo">
+                            <a href="/">
+                                <img width="59" height="68" loading="lazy" src="img/logo-moon.png" alt="Частный SEO-специалист Рустам Драницын">
+                            </a>
+                        </div>
+                        <div class="top-bar__phone">
+                            <i class="i-phone top-bar__ic-messages"></i>
+                            <a href="tel:+79028211655">+7 902 821 16 55</a>
+                        </div>
+                        <div class="top-bar__messages">
+                            <a target="blank" rel="nofollow" href="https://wa.me/79028211655" onclick="ym(70966021,'reachGoal','clickWhatsapp'); return true;">
+                                <i class="i-whatsapp top-bar__ic-messages-2"></i>
+                            </a>
+                            <a target="blank" rel="nofollow" href="https://t.me/rdranitsyn" onclick="ym(70966021,'reachGoal','clickTlg'); return true;">
+                                <i class="i-telegram top-bar__ic-messages-2"></i>
+                            </a>
+                        </div>
+                        <div class="top-bar__call-back">
+                            <a href="#popup" class="popup-link" onclick="ym(70966021,'reachGoal','orderHeader'); return true;">Заказать звонок</a>
+                        </div>
+                    </div>
+                    <div class="top-bar__right-block">
+                        <div class="top-bar__page-conctact">
+                            <ul class="top-bar__nav-menu">
+                                <li class="city-top">
+                                    <i></i>
+                                    <span class="city-top-link" onclick="clickCite()">Омск</span>
+                                </li>
+                                <li><a href="/obo-mne">Обо мне</a></li>
+                                <li><a href="/kontaktyi">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="top-bar__social">
+                            <!-- <a href="https://www.instagram.com/seo_dranitsyn/" target="_blank" rel="nofollow" class="inst">
+                    <i class="i-inst top-bar__ic-social"></i> 
+                  </a>-->
+                            <a href="https://vk.com/rdranitsyn" target="_blank" rel="nofollow" class="vk">
+                                <i class="i-vk top-bar__ic-social"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-description">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="header-nav">
+                        <div itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <ul itemprop="about" itemscope itemtype="http://schema.org/ItemList" class="nav-header">
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList" class="menu-item"><a itemprop="url" class="nav-link" href="seo">Продвижение</a>
+                                    <meta itemprop="name" content="Продвижение" />
+                                </li>
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList" class="menu-item nav-item-active"><a itemprop="url" class="nav-link" href="razrabotka-sajtov">Создание</a>
+                                    <meta itemprop="name" content="Создание" />
+                                </li>
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList" class="menu-item"><a itemprop="url" class="nav-link" href="kontekstnaya-reklama">Реклама</a>
+                                    <meta itemprop="name" content="Реклама" />
+                                </li>
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList" class="menu-item"><a itemprop="url" class="nav-link" href="smm">SMM</a>
+                                    <meta itemprop="name" content="SMM" />
+                                </li>
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList" class="menu-item"><a itemprop="url" class="nav-link" href="audit">Аудит</a>
+                                    <meta itemprop="name" content="Аудит" />
+                                </li>
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList" class="menu-item"><a itemprop="url" class="nav-link" href="kejsyi">Кейсы</a>
+                                    <meta itemprop="name" content="Кейсы" />
+                                </li>
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList" class="menu-item nav-item-lastClass"><a itemprop="url" class="nav-link" href="blog">Блог</a>
+                                    <meta itemprop="name" content="Блог" />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-drop__box"><span>Все услуги</span>
+                            <div class="menu-drop__box">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="menu-drop__box-item">
+                                            <p><a href="/razrabotka-sajtov">Создание сайтов</a></p>
+                                            <a href="/razrabotka-sajtov/sajt-vizitka">Сайт визитка</a>
+                                            <a href="/razrabotka-sajtov/landing-page">Landing page</a>
+                                            <a href="/razrabotka-sajtov/sajt-kompanii">Сайт компании</a>
+                                            <a href="/razrabotka-sajtov/sajt-internet-magazin">Интернет-магазин</a>
+                                        </div>
+                                        <div class="menu-drop__box-item">
+                                            <p><a href="/seo">SEO продвижение сайтов</a></p>
+                                        </div>
+                                        <div class="menu-drop__box-item">
+                                            <p><a href="/audit">Аудит сайта</a></p>
+                                            <a href="/audit/seo-audit">SEO-аудит сайта</a>
+                                            <a href="/audit/tehnicheskij">Технический аудит сайта</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="menu-drop__box-item">
+                                            <p><a href="/smm">SMM-продвижение</a></p>
+                                            <a href="/smm/prodvizhenie-instagram">Продвижение в Instagram</a>
+                                            <a href="/smm/prodvizhenie-vkontakte">Продвижение во Вконтакте</a>
+                                        </div>
+                                        <div class="menu-drop__box-item">
+                                            <p><a href="/kontekstnaya-reklama">Контекстная реклама</a></p>
+                                            <a href="/kontekstnaya-reklama/nastroyka-google-ads">Реклама в Google
+                  Adwords</a>
+                                            <a href="/kontekstnaya-reklama/yandex-direkt">Реклама в
+                  Яндекс.Директ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <ol itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+                            <li itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem" class="breadcrumb-item">
+                                <a itemprop="item" href="/">
+                                    <span itemprop="name">Главная</span>
+                                    <meta itemprop="position" content="1">
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                <span itemprop="name">Создание</span>
+                                <meta itemprop="position" content="2">
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="top-description-block">
+                    <div itemscope itemtype="http://schema.org/WPHeader" class="top-description-wrapper top-description-wrapper__developer">
+                        <h1 itemprop="name">Создание сайтов под ключ в Омске</h1>
+                        <p itemprop="description">
+                            Бизнес расширяет границы, переходя из офлайн в онлайн. Для успеха среди конкурентов важно создать профессиональный сайт. На рынке много компаний, специфика которых – разработка сайтов. У каждой личные методики и подходы. Примечательно, что одни фирмы
+                            ставят завышенный ценник, другие, напротив, заниженный, хотя фронт работ остаётся примерно одинаковым.
+                        </p>
+                        <div class="top-order">
+                            <a href="#popup" class="popup-link popup-order btn-black">Заказать сайт</a>
+                        </div>
+                    </div>
+                    <div itemscope itemtype="http://schema.org/ImageObject" class="wrapper-img">
+                        <img itemprop="contentUrl" src="img/dev-img-top.png" loading="lazy" alt="создание сайтов" class="top-rocket img-top-developer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="developer-price">
+        <h2 class="subtitle">
+            Популярные решения по разработке сайтов
+        </h2>
+        <div class="container">
+            <div class="developer-price__wrapper">
+                <div class="developer-price__item">
+                    <div class="developer-price__item__wrapper">
+                        <img loading="lazy" width="96" height="96" src="img/icon-interpreter.png" alt="САЙТ ВИЗИТКА">
+                        <div class="developer-price__item-title">
+                            САЙТ ВИЗИТКА
+                        </div>
+                        <div class="developer-price__item-title_description">
+                            Создание 1-3 дня
+                        </div>
+                        <div class="developer-price__item-price">
+                            6 500 руб.
+                        </div>
+                        <div class="developer-price__item-description">
+                            Одностраничный сайт из 5-6 инфоблоков для быстрой публикации информации о компании.
+                        </div>
+                        <a href="/razrabotka-sajtov/sajt-vizitka" class="btn-developer">Подробнее</a>
+                    </div>
+                </div>
+                <div class="developer-price__item">
+                    <div class="developer-price__item__wrapper">
+                        <img loading="lazy" width="96" height="96" src="img/icon-compani.png" alt="САЙТ КОМПАНИИ">
+                        <div class="developer-price__item-title">
+                            САЙТ КОМПАНИИ
+                        </div>
+                        <div class="developer-price__item-title_description">
+                            Создание 14-30 дней
+                        </div>
+                        <div class="developer-price__item-price">
+                            от 20 000 руб.
+                        </div>
+                        <div class="developer-price__item-description">
+                            Многостраничный сайт с расширенной информацией о компании, услугах, работах (корпоративный сайт)
+                        </div>
+                        <a href="/razrabotka-sajtov/sajt-kompanii" class="btn-developer">Подробнее</a>
+                    </div>
+                </div>
+                <div class="developer-price__item">
+                    <div class="developer-price__item__wrapper">
+                        <img loading="lazy" width="96" height="96" src="img/icon-magazin.png" alt="ИНТЕРНЕТ-МАГАЗИН">
+                        <div class="developer-price__item-title">
+                            ИНТЕРНЕТ-МАГАЗИН
+                        </div>
+                        <div class="developer-price__item-title_description">
+                            Создание 14-60 дней
+                        </div>
+                        <div class="developer-price__item-price">
+                            от 25 000 руб.
+                        </div>
+                        <div class="developer-price__item-description">
+                            Сайт-каталог товаров с возможностью оформления заказа покупателем, расчета доставки и оплаты.
+                        </div>
+                        <a href="/razrabotka-sajtov/sajt-internet-magazin" class="btn-developer">Подробнее</a>
+                    </div>
+                </div>
+                <div class="developer-price__item">
+                    <div class="developer-price__item__wrapper">
+                        <img loading="lazy" width="96" height="96" src="img/landing-page.png" alt="LANDING PAGE">
+                        <div class="developer-price__item-title">
+                            LANDING PAGE
+                        </div>
+                        <div class="developer-price__item-title_description">
+                            Создание 14-30 дней
+                        </div>
+                        <div class="developer-price__item-price">
+                            от 20 000 руб.
+                        </div>
+                        <div class="developer-price__item-description">
+                            Одностраничный сайт, акцентирующий внимание на отдельном коммерческом предложении.
+                        </div>
+                        <a href="/razrabotka-sajtov/landing-page" class="btn-developer">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="seven-step">
+        <div class="container" itemscope="" itemtype="http://schema.org/HowTo">
+            <h2 itemprop="name" class="subtitle">
+                Основные этапы разработки сайта
+            </h2>
+            <meta itemprop="name" content="Этапы разработки сайта">
+            <span itemprop="estimatedCost" itemscope="" itemtype="http://schema.org/MonetaryAmount">
+                    <meta itemprop="currency" content="RUB">
+                    <meta itemprop="value" content="6500">
+                </span>
+
+            <meta itemprop="totalTime" content="P9D">
+            <meta itemprop="description" content="Основные этапы разработки сайта">
+
+            <meta itemprop="tool" content="Частный специалист Рустам Драницын">
+            <div class="step-tabs">
+                <div class="tabs-head">
+                    <div class="container-fluid">
+                        <div class="row list-item-head">
+                            <div class="col item-head">
+                                <div id="id1" class="tabs tab-head active" onclick="oneTab1()">
+                                    <div class="num">
+                                        01
+                                    </div>
+                                    <div class="name">
+                                        Первые шаги в работе
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col item-head">
+                                <div id="id2" class="tabs tab-head" onclick="oneTab2()">
+                                    <div class="num">
+                                        02
+                                    </div>
+                                    <div class="name">
+                                        Разработка сайта
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col item-head">
+                                <div id="id3" class="tabs tab-head " onclick="oneTab3()">
+                                    <div class="num">
+                                        03
+                                    </div>
+                                    <div class="name">
+                                        Старт
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-body">
+                    <div id="tab1" class="tab-body__item active-block" itemprop="step" itemscope="" itemtype="http://schema.org/HowToStep">
+                        <div class="tab-body__item-text">
+                            <span class="tab-body__item-title" itemprop="name">
+                                    Первые шаги в работе
+                                </span>
+                            <link itemprop="url" href="https://seo-dranitsyn.ru/prodvizhenie-instagram#step1">
+                            <meta itemprop="position" content="1">
+                            <div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                                <div itemprop="text">
+                                    <span class="tab-body__item__block-list__left-title">
+                                            Обработка вашей заявки
+                                        </span>
+                                    <div class="tab-body__item__block-list">
+                                        <div class="tab-body__item__block-list__left">
+                                            <p>
+                                                Знакомство, уточнения, внесение конкретики, наброски плана дальнейшего сотрудничества. Фиксирование основных сведений, ориентиров.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="tab-body__item__block-list__left-title">
+                                            Проектные идеи
+                                        </span>
+                                    <div class="tab-body__item__block-list">
+                                        <div class="tab-body__item__block-list__left">
+                                            <p>
+                                                На очной встрече или по онлайн-связи (с помощью Zoom, What's App, Viber, Skype) проводим дискуссию об идее сайта.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="tab-body__item__block-list__left-title">
+                                            Портрет конкурентов
+                                        </span>
+                                    <div class="tab-body__item__block-list">
+                                        <div class="tab-body__item__block-list__left">
+                                            <p>
+                                                Проводим анализ сайтов конкурентов по нужной ниши, выделяем сильные и слабые стороны. Разрабатываем конкурентное преимущество. Готовим подробное техническое задание.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="tab-body__item__block-list__left-title">
+                                            Официальное заверение
+                                        </span>
+                                    <div class="tab-body__item__block-list">
+                                        <div class="tab-body__item__block-list__left">
+                                            <p>
+                                                Подписываем договор с клиентом, предоставляем счёт (работа по предоплате). Здесь начинается разработка сайтов под ключ.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-body__item-img">
+                            <img itemprop="image" loading="lazy" src="img/dev-step-1.png" alt="Заполнение брифа">
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-body__item" itemprop="step" itemscope="" itemtype="http://schema.org/HowToStep">
+                        <div class="tab-body__item-text">
+                            <span class="tab-body__item-title" itemprop="name">
+                                    Разработка сайта
+                                </span>
+                            <link itemprop="url" href="https://seo-dranitsyn.ru/prodvizhenie-instagram#step2">
+                            <meta itemprop="position" content="2">
+                            <div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                                <div itemprop="text">
+                                    <span class="tab-body__item__block-list__left-title">
+                                            Создание макета
+                                        </span>
+                                    <div class="tab-body__item__block-list">
+                                        <div class="tab-body__item__block-list__left">
+                                            <p>
+                                                Делаем неповторимый дизайн и отправляем клиенту на согласование.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="tab-body__item__block-list__left-title">
+                                            Верстка макета
+                                        </span>
+                                    <div class="tab-body__item__block-list">
+                                        <div class="tab-body__item__block-list__left">
+                                            <p>
+                                                Согласованный макет отправляется на вёрстку, после чего интегрируется в нужную CMS (Content Mahagement System).
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="tab-body__item__block-list__left-title">
+                                            Работа программиста
+                                        </span>
+                                    <div class="tab-body__item__block-list">
+                                        <div class="tab-body__item__block-list__left">
+                                            <p>
+                                                Создаём навигацию, структуру, функционал, настраиваем CMS.
+                                            </p>
+                                            <p>
+                                                Программирование нестандартного функционала для сайта и настройка параметров CMS.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="tab-body__item__block-list__left-title">
+                                            SEO-элементы
+                                        </span>
+                                    <div class="tab-body__item__block-list">
+                                        <div class="tab-body__item__block-list__left">
+                                            <p>
+                                                Создаём текстовое наполнение, работаем с графическими деталями, публикуем полученный результат на портале.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-body__item-img">
+                            <img itemprop="image" loading="lazy" src="img/dev-step-2.png" alt="Обсуждение идей">
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab-body__item" itemprop="step" itemscope="" itemtype="http://schema.org/HowToStep">
+                        <div class="tab-body__item-text">
+                            <span class="tab-body__item-title" itemprop="name">
+                                    Старт
+                                </span>
+                            <link itemprop="url" href="https://seo-dranitsyn.ru/prodvizhenie-instagram#step3">
+                            <meta itemprop="position" content="3">
+                            <div itemprop="itemListElement" itemscope="" itemtype="http://schema.org/HowToDirection">
+                                <div itemprop="text">
+                                    <span class="tab-body__item__block-list__left-title">
+                                            Тестируем сайт
+                                        </span>
+                                    <div class="tab-body__item__block-list">
+                                        <div class="tab-body__item__block-list__left">
+                                            <p>
+                                                Финальное тестирование сайта. Проверяем кроссбраузерность, адаптивность.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="tab-body__item__block-list__left-title">
+                                            Запускаем сайт
+                                        </span>
+                                    <div class="tab-body__item__block-list">
+                                        <div class="tab-body__item__block-list__left">
+                                            <p>
+                                                Ресурс размещаем на хостинге, интегрируем дополнительные инструменты (например, счётчики аналитики, онлайн-консультант), добавляем проект в поисковые системы Yandex и Google.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="tab-body__item__block-list__left-title">
+                                            Сдаём проект
+                                        </span>
+                                    <div class="tab-body__item__block-list">
+                                        <div class="tab-body__item__block-list__left">
+                                            <p>
+                                                Передаём результат в руки законного владельца, получаем оставшуюся часть денег
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="tab-body__item__block-list__left-title">
+                                            Дальнейшее сотрудничество
+                                        </span>
+                                    <div class="tab-body__item__block-list">
+                                        <div class="tab-body__item__block-list__left">
+                                            <p>
+                                                Идеи по продолжению работы, продвижению, применению инструментов рекламы, маркетинга, ведению.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-body__item-img">
+                            <img itemprop="image" loading="lazy" src="img/dev-step-3.png" alt="Предоплата">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="site-content content">
+        <div class="container">
+            <h3>&nbsp;</h3>
+
+            <ul>
+            </ul>
+
+        </div>
+    </section>
+    <section class="adv-developer">
+        <div class="container">
+            <h2 class="subtitle">
+                Заказать сайт у дилетантов = потерять прибыль
+            </h2>
+            <div class="adv-developer__wrapper">
+                <div class="adv-developer__item">
+                    <div class="adv-developer__item-icon">
+                        <img loading="lazy" src="img/non-responsive.svg" alt="Неадаптивный дизайн">
+                    </div>
+                    <div class="adv-developer__item-title">
+                        Неадаптивный дизайн
+                    </div>
+                    <div class="adv-developer__item-description">
+                        Дизайн без адаптации для телефонов и планшетов ведёт к потере посетителей, поскольку большая часть пользователей применяет эти компактные гаджеты, а не классические компьютеры.
+                    </div>
+                </div>
+                <div class="adv-developer__item">
+                    <div class="adv-developer__item-icon">
+                        <img loading="lazy" src="img/bad-design.svg" alt="Некачественный дизайн">
+                    </div>
+                    <div class="adv-developer__item-title">
+                        Трудности в навигации
+                    </div>
+                    <div class="adv-developer__item-description">
+                        Если пользователь не может найти нужный товар, страницу, окно заказа, оплаты, он не станет тратить время и уйдёт к конкуренту. Это ведёт к потере доходов, лояльности и доверия.
+                    </div>
+                </div>
+                <div class="adv-developer__item">
+                    <div class="adv-developer__item-icon">
+                        <img loading="lazy" src="img/bad-navigation.svg" alt="Неудобная навигация">
+                    </div>
+                    <div class="adv-developer__item-title">
+                        Низкосортный дизайн
+                    </div>
+                    <div class="adv-developer__item-description">
+                        Это играет большую роль: палитра цветов, расположение и сочетание элементов, шрифт – если не учесть психологию и потребности целевых групп, последует фиаско. Комфортная цифровая среда - ключевой фактор.
+                    </div>
+                </div>
+                <div class="adv-developer__item">
+                    <div class="adv-developer__item-icon">
+                        <img loading="lazy" src="img/bad-structure.svg" alt="Неудобная структура">
+                    </div>
+                    <div class="adv-developer__item-title">
+                        Неудобная структура
+                    </div>
+                    <div class="adv-developer__item-description">
+                        Если не продумана структура сайта, заголовков и расположение элементов посетитель путается и быстро решает уйти с сайта.
+                    </div>
+                </div>
+                <div class="adv-developer__item">
+                    <div class="adv-developer__item-icon">
+                        <img loading="lazy" src="img/no-info.svg" alt="Неинформативность">
+                    </div>
+                    <div class="adv-developer__item-title">
+                        Нет пользы для клиента
+                    </div>
+                    <div class="adv-developer__item-description">
+                        Дешевое текстовое наполнение или плагиат спугнут потенциальных покупателей и заставят обратиться к другой компании.
+                    </div>
+                </div>
+                <div class="adv-developer__item">
+                    <div class="adv-developer__item-icon">
+                        <img loading="lazy" src="img/bad-seo.svg" alt="SEO оптимизация">
+                    </div>
+                    <div class="adv-developer__item-title">
+                        Ошибки SEO-продвижения
+                    </div>
+                    <div class="adv-developer__item-description">
+                        Это станет причиной низкого рейтинга веб-сайта в поисковиках, и посетители с высокой вероятностью не доберутся до него.
+                    </div>
+                </div>
+                <div class="adv-developer__item">
+                    <div class="adv-developer__item-icon">
+                        <img loading="lazy" src="img/slow-work.svg" alt="Медленная работа сайта">
+                    </div>
+                    <div class="adv-developer__item-title">
+                        Низкая скорость
+                    </div>
+                    <div class="adv-developer__item-description">
+                        Покупатели ценят время и не будут ждать, пока прогрузятся страницы или будут устранены неполадки. Платформа всегда должна быть во всеоружии.
+                    </div>
+                </div>
+                <div class="adv-developer__item">
+                    <div class="adv-developer__item-icon">
+                        <img loading="lazy" src="img/mistake-to-work.svg" alt="Ошибки в работе">
+                    </div>
+                    <div class="adv-developer__item-title">
+                        Ошибки в работе
+                    </div>
+                    <div class="adv-developer__item-description">
+                        Имеют высокие шансы сделать ваш сайт нерабочим в самое неподходящее время и вынудить посетителей покинуть его.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="important-developer">
+            <div class="container">
+                <div class="important-developer__wrapper">
+                    <div class="important-developer__left">
+                        <img src="img/developer-important.svg" loading="lazy" alt="developer-important">
+                    </div>
+                    <div class="important-developer__right">
+                        <div class="important-developer__right_top">
+                            <div class="important-developer__right-title important-developer__right_top-title">
+                                Главная деталь
+                            </div>
+                            <div class="important-developer__right_top-description">
+                                Из-за некачественного сайта эффективность других инструментов продвижения стремится к нулю: маркетинг, SMM, видеоролики; акции, почтовые рассылки не сработают. Это поражение и радость для противников.
+                            </div>
+                        </div>
+                        <div class="important-developer__right_bottom">
+                            <div class="important-developer__right-title  important-developer__right_bottom-title">
+                                Как этого избежать?
+                            </div>
+                            <div class="important-developer__right_bottom-description">
+                                Закажите хороший сайт и избавьте себя от проблем!
+                            </div>
+                        </div>
+                        <a href="#popup" class="popup-link important-seo__popup-order btn-gold">Заказать хороший сайт</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="site-description">
+        <div class="container">
+            <h2 class="site-description__title subtitle">
+                Выберите идеальный вариант!
+            </h2>
+            <div class="site-description__wrapper">
+                <div class="site-description__item">
+                    <div class="site-description__item__wrapper">
+                        <h3 class="site-description__item-title">
+                            Одностраничный сайт-визитка
+                        </h3>
+                        <div class="site-description__item-description">
+                            Пока готовится полноценный онлайн-магазин или лендинг, начинайте взаимодействие с аудиторией с помощью этого выгодного и простого решения, создавайте доверительные взаимоотношения.
+                        </div>
+                        <div class="suitable-for">
+                            Подойдёт для:
+                        </div>
+                        <ul class="site-description__item-list">
+                            <li>
+                                Публикации сведений о фирме внутри справочников, журналов, каталогов
+                            </li>
+                        </ul>
+                        <a href="/razrabotka-sajtov/sajt-vizitka" class="site-description__item-btn">
+                Подробнее
+              </a>
+                    </div>
+                    <div class="bg"></div>
+                </div>
+                <div class="site-description__item">
+                    <div class="site-description__item__wrapper">
+                        <h3 class="site-description__item-title">
+                            Одностраничный лендинг
+                        </h3>
+                        <div class="site-description__item-description">
+                            Идеально для раскрутки специального предложения для конкретного сегмента. Вариант представляет собой ярко оформленное решение с информационными блоками.
+                        </div>
+                        <div class="suitable-for">
+                            Подойдёт для:
+                        </div>
+                        <ul class="site-description__item-list">
+                            <li>
+                                Различного рода рекламы
+                            </li>
+                        </ul>
+                        <a href="/razrabotka-sajtov/landing-page" class="site-description__item-btn">
+                Подробнее
+              </a>
+                    </div>
+                    <div class="bg"></div>
+                </div>
+                <div class="site-description__item">
+                    <div class="site-description__item__wrapper">
+                        <h3 class="site-description__item-title">
+                            Многостраничный сайт компании
+                        </h3>
+                        <div class="site-description__item-description">
+                            Здесь большой простор для предоставления информации о бизнесе покупателям. Формирует лояльное отношение и спрос. Наполнение можно легко поменять или обновить с помощью системы управления. Проект дополняется каталогами, обзорами, лендингами.
+                        </div>
+                        <div class="suitable-for">
+                            Подойдёт для:
+                        </div>
+                        <ul class="site-description__item-list">
+                            <li>
+                                Публикации сведений о фирме внутри справочников, журналов, каталогов
+                            </li>
+                            <li>
+                                Продвижению в поисковых системах
+                            </li>
+                            <li>
+                                Рекламы
+                            </li>
+                        </ul>
+                        <a href="/razrabotka-sajtov/sajt-kompanii" class="site-description__item-btn">
+                Подробнее
+              </a>
+                    </div>
+                    <div class="bg"></div>
+                </div>
+                <div class="site-description__item">
+                    <div class="site-description__item__wrapper">
+                        <h3 class="site-description__item-title">
+                            Интернет-магазин
+                        </h3>
+                        <div class="site-description__item-description">
+                            Идеален для широкого ассортимента продуктов. Функции оформления заказа, внедрение различных способов оплаты и доставки, акций, скидок, специальных предложений. Сложное решение в контексте технической и маркетинговой работы и особенностей.
+                        </div>
+                        <div class="suitable-for">
+                            Подойдёт для:
+                        </div>
+                        <ul class="site-description__item-list">
+                            <li>
+                                Продвижения в поисковых системах
+                            </li>
+                            <li>
+                                Публикации расширенных каталогов
+                            </li>
+                            <li>
+                                Рекламы
+                            </li>
+                        </ul>
+                        <a href="/razrabotka-sajtov/sajt-internet-magazin" class="site-description__item-btn">
+                Подробнее
+              </a>
+                    </div>
+                    <div class="bg"></div>
+                </div>
+            </div>
+            <div class="good-site">
+                Настало время сделать хороший сайт!
+            </div>
+            <div class="site-description__btn">
+                <a href="#popup" class="popup-link popup-order btn-black">Заявка на разработку сайта</a>
+            </div>
+        </div>
+    </section>
+    <section class="with-us">
+        <div class="container">
+            <h2 class="with-us__title subtitle">
+                Мы создадим сайт, который принесёт деньги
+            </h2>
+            <div class="with-us__wrapper">
+                <div class="with-us__left-block">
+                    <div class="with-us__item">
+                        <div class="with-us__item__title">
+                            Комфортный для всех
+                        </div>
+                        <div class="with-us__item__description">
+                            Клиенты удобно перемещаются по порталу с телефона, ноутбука, компьютера, планшета. Вы с комфортом управляете ресурсом, при необходимости внося изменения.
+                        </div>
+                    </div>
+                    <div class="with-us__item">
+                        <div class="with-us__item__title">
+                            Притягательное оформление
+                        </div>
+                        <div class="with-us__item__description">
+                            Современный дизайн приятный для глаз клиентов вызывает удовольствие и желание провести на сайте больше времени, сделать покупку.
+                        </div>
+                    </div>
+                    <div class="with-us__item">
+                        <div class="with-us__item__title">
+                            Возможности для продвижения
+                        </div>
+                        <div class="with-us__item__description">
+                            Ещё на этапе разработки внедряем инструменты для SEO и маркетингового продвижения. Получается укомплектованное решение для приёма целевых посетителей в Омске и других регионах.
+                        </div>
+                    </div>
+                </div>
+                <div class="with-us__right-block">
+                    <img class="with-us-roket" loading="lazy" src="img/with-us-roket.svg" alt="with-us-roket">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__left footer__block">
+                    <div class="footer__block__item footer__block__item-one">
+                        <span class="footer__block__item-title">
+                            Услуги
+                        </span>
+                        <ul class="footer__block__item__nav">
+                            <li class="footer__block__item__nav">
+                                <a href="">
+                                    Создание сайтов
+                                </a>
+                            </li>
+                            <li class="footer__block__item__nav">
+                                <a href="">
+                                    Продвижение сайтов
+                                </a>
+                            </li>
+                            <li class="footer__block__item__nav">
+                                <a href="">
+                                    Контекстная реклама
+                                </a>
+                            </li>
+                            <li class="footer__block__item__nav">
+                                <a href="">
+                                    SMM продвижение
+                                </a>
+                            </li>
+                            <li class="footer__block__item__nav">
+                                <a href="">
+                                    Аудит
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__block__item">
+                        <span class="footer__block__item-title">
+                            Информация
+                        </span>
+                        <ul class="footer__block__item__nav">
+                            <li class="footer__block__item__nav">
+                                <a href="">
+                                    О нас
+                                </a>
+                            </li>
+                            <li class="footer__block__item__nav">
+                                <a href="">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="footer__block__item__nav">
+                                <a href="">
+                                    Блог
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <i class="callback-whatsappe ic-callback"></i>
+                <div class="footer__right footer__block">
+                    <div class="footer__block__item">
+                        <span class="footer__block__item-title footer__block__item-title-contact">
+                            Контакты
+                        </span>
+                        <div class="footer-info">
+                            <div class="footer-info__icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path
+                                            d="M14.5912 19.9999C14.5766 19.9999 14.562 19.9999 14.5474 19.9998C13.1683 19.9929 11.6657 19.6429 10.0813 18.9595C9.68507 18.7886 9.50245 18.3289 9.67335 17.9327C9.84421 17.5365 10.304 17.3538 10.7001 17.5247C12.0709 18.116 13.404 18.4316 14.5551 18.4373C14.5671 18.4374 14.5789 18.4374 14.5908 18.4374C16.031 18.4374 17.2335 17.9997 18.0713 17.1705L18.0768 17.1644C18.5864 16.5966 18.5554 15.7368 18.0061 15.2071C15.9086 13.1845 14.9183 13.3309 14.0017 14.2247L12.5426 15.6729C12.3139 15.9 11.9689 15.9633 11.6745 15.8321C11.5919 15.7953 9.62648 14.906 7.41175 12.6912L7.3089 12.5885C5.09386 10.3734 4.20444 8.40807 4.16769 8.32549C4.03655 8.03096 4.0998 7.68611 4.32691 7.45728L5.77511 5.99822C6.66886 5.0817 6.8153 4.09143 4.79269 1.99389C4.26292 1.44455 3.40319 1.41353 2.83534 1.92326L2.82937 1.92865C1.99331 2.77342 1.5553 3.98877 1.56253 5.44482C1.57655 8.25416 3.17069 11.5171 5.82675 14.1731C6.33316 14.6794 6.91148 15.1827 7.54566 15.669C7.88808 15.9315 7.95284 16.4219 7.69027 16.7644C7.42773 17.1068 6.93734 17.1715 6.59495 16.909C5.90659 16.3812 5.2764 15.8324 4.72191 15.2779C1.78136 12.3374 0.0161636 8.66443 0.00010889 5.45264C-0.00930517 3.56197 0.591867 1.95646 1.7387 0.809629C1.74862 0.799746 1.75878 0.790098 1.76917 0.780762L1.79159 0.760605C2.36769 0.243496 3.1105 -0.0259572 3.8846 0.00197251C4.65823 0.0298631 5.38015 0.352129 5.91745 0.909355C6.96956 2.00041 7.57687 2.91455 7.82878 3.78615C8.17585 4.98729 7.86023 6.09971 6.89066 7.0924C6.88917 7.09393 6.88769 7.09541 6.8862 7.09689L5.83777 8.15318C6.20952 8.8126 7.02652 10.0964 8.41355 11.4834L8.51636 11.5862C9.90319 12.9729 11.1868 13.79 11.8469 14.1621L12.9032 13.1137C12.9046 13.1122 12.9061 13.1108 12.9076 13.1093C13.9004 12.1397 15.0129 11.8241 16.2139 12.1712C17.0855 12.4231 17.9997 13.0304 19.0907 14.0825C19.648 14.6198 19.9702 15.3417 19.9981 16.1154C20.026 16.889 19.7566 17.6322 19.2396 18.2083L19.2193 18.2308C19.21 18.2413 19.2003 18.2514 19.1905 18.2613C18.0524 19.3992 16.4628 19.9999 14.5912 19.9999Z"
+                                            fill="url(#paint0_linear)" />
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear" x1="-8.2976e-06" y1="9.99989"
+                                            x2="20.0001" y2="9.99989" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#00F2FE" />
+                                            <stop offset="0.021" stop-color="#03EFFE" />
+                                            <stop offset="0.293" stop-color="#24D2FE" />
+                                            <stop offset="0.554" stop-color="#3CBDFE" />
+                                            <stop offset="0.796" stop-color="#4AB0FE" />
+                                            <stop offset="1" stop-color="#4FACFE" />
+                                        </linearGradient>
+                                        <clipPath id="clip0">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="footer-info__link">
+                                +7 (960) 974-50-82
+                            </div>
+                        </div>
+                        <div class="footer-info">
+                            <div class="footer-info__icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path
+                                            d="M20 4.43719V15.5628C19.9986 15.7097 19.9369 15.8496 19.8293 15.9496C19.8163 15.9625 19.8021 15.974 19.7868 15.984C19.6961 16.0543 19.5845 16.0925 19.4698 16.0926H0.530239C0.415455 16.0925 0.303905 16.0543 0.213164 15.984C0.197885 15.974 0.183636 15.9625 0.170747 15.9496C0.0630869 15.8496 0.00135923 15.7097 0 15.5628V4.43719C0.00023435 4.32958 0.0325277 4.22445 0.0926618 4.13525C0.11066 4.11191 0.130111 4.08979 0.150968 4.06893C0.249582 3.96516 0.386583 3.90667 0.529724 3.90723H19.4698C19.6129 3.90667 19.75 3.96516 19.8485 4.06893C19.8693 4.08979 19.8888 4.11196 19.9068 4.13525C19.9672 4.22445 19.9996 4.32953 20 4.43719Z"
+                                            fill="#F6B863" />
+                                        <path
+                                            d="M19.9074 4.13517C19.2823 4.73393 18.6465 5.32463 18.0214 5.92316C17.1604 6.72576 16.2969 7.52302 15.4307 8.31507C14.8691 8.82886 14.3058 9.34007 13.7408 9.8487C13.603 9.9731 13.4652 10.0977 13.3249 10.2221C12.2843 11.1598 11.238 12.0913 10.186 13.0167L10.0006 13.1808L9.81523 13.0167C8.7689 12.0899 7.71991 11.1597 6.67897 10.2221C6.5385 10.1002 6.39827 9.9731 6.26042 9.8487C5.69363 9.34012 5.1303 8.82891 4.57048 8.31507C3.70156 7.52307 2.83798 6.72576 1.9798 5.92316C1.35469 5.3244 0.718854 4.7337 0.09375 4.13517C0.111748 4.11183 0.131199 4.0897 0.152056 4.06885C0.824968 4.6093 1.48982 5.16298 2.16006 5.70587C3.06296 6.45481 3.96164 7.20894 4.85611 7.96824C6.58584 9.43161 8.29505 10.9194 10.0004 12.4106C11.7062 10.9164 13.4149 9.43039 15.1446 7.96824C16.0373 7.20791 16.9361 6.45387 17.8411 5.70611C18.5114 5.16321 19.1762 4.60855 19.8491 4.06908C19.8699 4.08985 19.8894 4.11192 19.9074 4.13517Z"
+                                            fill="#EAA14E" />
+                                        <path
+                                            d="M6.85145 10.0689L6.67925 10.2226L0.213316 15.9842C0.198036 15.9742 0.183788 15.9626 0.170898 15.9498L6.26075 9.84917L6.47003 9.63989L6.85145 10.0689Z"
+                                            fill="#EAA14E" />
+                                        <path
+                                            d="M19.83 15.9497C19.8171 15.9626 19.8029 15.9741 19.7876 15.9841L13.3253 10.2225L13.1504 10.0689L13.5319 9.63989L13.7411 9.84917L19.83 15.9497Z"
+                                            fill="#EAA14E" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="footer-info__link">
+                                novosibirsk@yourclean.ru
+                            </div>
+                        </div>
+                        <div class="footer-info">
+                            <div class="footer-info__icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                        <path
+                                            d="M17.2128 11.5375C17.8763 12.1852 18.5765 12.7946 19.1715 13.5076C19.4344 13.8245 19.6832 14.1514 19.8736 14.5192C20.1433 15.0419 19.899 15.6171 19.4303 15.6484L16.5166 15.647C15.7651 15.7094 15.1657 15.4069 14.6616 14.893C14.2582 14.4821 13.8846 14.0448 13.4967 13.6201C13.3377 13.4465 13.1712 13.2831 12.9724 13.154C12.5747 12.8958 12.2294 12.9748 12.0021 13.3897C11.7706 13.8116 11.7181 14.2788 11.6953 14.7491C11.6641 15.4352 11.4567 15.6155 10.7676 15.647C9.29472 15.7164 7.89691 15.4936 6.59835 14.7506C5.45351 14.0956 4.56577 13.1709 3.79304 12.124C2.28862 10.0856 1.13648 7.8457 0.101008 5.54305C-0.132078 5.02426 0.0383911 4.74578 0.610813 4.7359C1.56132 4.71742 2.51171 4.71875 3.46335 4.73457C3.84968 4.74023 4.10542 4.9618 4.2546 5.32676C4.76886 6.59125 5.39812 7.7943 6.18796 8.90941C6.39831 9.20629 6.6128 9.5032 6.91819 9.71215C7.25609 9.94352 7.51335 9.86684 7.6723 9.49043C7.77316 9.25176 7.81733 8.99469 7.84007 8.7391C7.91538 7.85969 7.9253 6.98176 7.79323 6.10543C7.71214 5.55852 7.40409 5.20445 6.85835 5.10098C6.57987 5.0482 6.62132 4.94457 6.75616 4.78563C6.99034 4.51148 7.21062 4.34082 7.64972 4.34082H10.9426C11.461 4.44312 11.5761 4.67602 11.6471 5.19762L11.6499 8.85531C11.6442 9.05723 11.7508 9.65648 12.1145 9.79012C12.4056 9.88527 12.5975 9.65238 12.7721 9.46781C13.5605 8.63105 14.1232 7.64215 14.6259 6.61816C14.849 6.16789 15.0408 5.70031 15.2267 5.23309C15.3645 4.88641 15.5806 4.71582 15.9711 4.72336L19.1403 4.72617C19.2343 4.72617 19.3294 4.72754 19.4204 4.74313C19.9544 4.83414 20.1008 5.06387 19.9358 5.58535C19.676 6.40352 19.1703 7.08535 18.6759 7.77031C18.1474 8.5016 17.5821 9.20789 17.058 9.94352C16.5764 10.6154 16.6147 10.954 17.2128 11.5375Z"
+                                            fill="#436EAB" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="footer-info__link">
+                                Мы в контакте
+                            </div>
+                        </div>
+                        <div class="footer-info">
+                            <div class="footer-info__icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.75 0H6.25C2.79875 0 0 2.79875 0 6.25V13.75C0 17.2013 2.79875 20 6.25 20H13.75C17.2013 20 20 17.2013 20 13.75V6.25C20 2.79875 17.2013 0 13.75 0ZM18.125 13.75C18.125 16.1625 16.1625 18.125 13.75 18.125H6.25C3.8375 18.125 1.875 16.1625 1.875 13.75V6.25C1.875 3.8375 3.8375 1.875 6.25 1.875H13.75C16.1625 1.875 18.125 3.8375 18.125 6.25V13.75Z"
+                                        fill="url(#paint0_linear)" />
+                                    <path
+                                        d="M10 5C7.23875 5 5 7.23875 5 10C5 12.7613 7.23875 15 10 15C12.7613 15 15 12.7613 15 10C15 7.23875 12.7613 5 10 5ZM10 13.125C8.2775 13.125 6.875 11.7225 6.875 10C6.875 8.27625 8.2775 6.875 10 6.875C11.7225 6.875 13.125 8.27625 13.125 10C13.125 11.7225 11.7225 13.125 10 13.125Z"
+                                        fill="url(#paint1_linear)" />
+                                    <path
+                                        d="M15.3752 5.29123C15.7432 5.29123 16.0415 4.99295 16.0415 4.62499C16.0415 4.25703 15.7432 3.95874 15.3752 3.95874C15.0073 3.95874 14.709 4.25703 14.709 4.62499C14.709 4.99295 15.0073 5.29123 15.3752 5.29123Z"
+                                        fill="url(#paint2_linear)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear" x1="1.83081" y1="18.1693"
+                                            x2="18.1692" y2="1.83069" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFC107" />
+                                            <stop offset="0.507" stop-color="#F44336" />
+                                            <stop offset="0.99" stop-color="#9C27B0" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear" x1="6.46456" y1="13.5354"
+                                            x2="13.5354" y2="6.46456" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFC107" />
+                                            <stop offset="0.507" stop-color="#F44336" />
+                                            <stop offset="0.99" stop-color="#9C27B0" />
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear" x1="14.9042" y1="5.09617"
+                                            x2="15.8463" y2="4.15392" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FFC107" />
+                                            <stop offset="0.507" stop-color="#F44336" />
+                                            <stop offset="0.99" stop-color="#9C27B0" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="footer-info__link">
+                                instagram.com
+                            </div>
+                        </div>
+                        <div class="footer-info-order">
+                            <a href="#popup" class="popup-link with-us__popup-order btn-gold">Отправить
+                                заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="copyright">
+                © 2020 частный сео-специалист Рустам Драницын
+            </span>
+
+
+
+
+        </div>
+    </footer>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close close-popup"><i></i></a>
+                <div class="popup__title">Отправить заявку</div>
+                <div class="popup__test">
+                    <label class="input">
+                        <i class="icon-user icon-popup"></i>
+                        <input class="popup__body-input" type="text" name="name" placeholder="Ваше имя">
+                    </label>
+                    <label class="input">
+                        <i class="icon-phone icon-popup"></i>
+                        <input class="popup__body-input" type="text" name="phone" placeholder="Телефон">
+                    </label>
+                    <label class="textarea">
+                        <i class="icon-comment icon-popup"></i>
+                        <textarea rows="3" name="comment" placeholder="Ваше сообщение"></textarea>
+                    </label>
+                    <button type="submit" class="button btn-success">Отправить</button>
+                    <span class="description-popup">
+                        Нажимая кнопку "Отправить" я даю согласие на обработку персональных данных.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back_to_top" id="toTop" onclick="topFunction()">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="25" r="25" fill="#FFA800"></circle>
+            <path
+                d="M31.8468 20.9378L25.8213 14.883L25.8202 14.882C25.3672 14.4282 24.6312 14.4297 24.1797 14.8821L24.1786 14.8832L18.1531 20.9379C17.7017 21.3915 17.7034 22.1252 18.157 22.5767C18.6106 23.0281 19.3443 23.0264 19.7957 22.5728L23.8412 18.5076V34.2989C23.8412 34.9389 24.36 35.4577 24.9999 35.4577C25.6399 35.4577 26.1587 34.9389 26.1587 34.2989V18.5076L30.2041 22.5727C30.6556 23.0262 31.3892 23.028 31.8428 22.5765C32.2966 22.125 32.2981 21.3913 31.8468 20.9378Z"
+                fill="white"></path>
+        </svg>
+    </div>
+    <div class="wrapper-callback">
+        <div class="callback-bt btn-callback">
+            <div class="text-call">
+                <i class="icon-calbback ic-callback"></i>
+                <img class="ic-callback ic-callback-close" src="img/close-1.svg" alt="">
+            </div>
+        </div>
+        <a target="blank" rel="nofollow" href="https://wa.me/79028211655" onclick="ym(70966021,'reachGoal','clickWhatsapp'); return true;" class="btn-callback whatsapp-btn">
+            <div class="text-call">
+                <img class="ic-callback" src="img/callback-whatsapp.svg" alt="">
+            </div>
+        </a>
+        <a target="blank" rel="nofollow" href="https://t.me/rdranitsyn" onclick="ym(70966021,'reachGoal','clickTlg'); return true;" class="btn-callback telegram-btn">
+            <div class="text-call">
+                <img class="ic-callback" src="img/callback-telegram.svg" alt="">
+            </div>
+        </a>
+        <a href="#popup" class="btn-callback message-btn popup-link">
+            <div class="text-call">
+                <img class="ic-callback" src="img//mail-ic.svg" alt="">
+            </div>
+        </a>
+
+    </div>
+
+    <script src="js/tab.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
